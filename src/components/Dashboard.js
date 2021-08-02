@@ -1,8 +1,11 @@
-
+import Header from "./Header"
 
 function Dashboard() {
     return (
-        <div></div>
+        <div>
+            <Header />
+
+        </div>
     );
 }
 

@@ -1,9 +1,16 @@
+import {Button, Container, Box} from "@material-ui/core"
 
 function Header() {
     return (
-        <div style={{height: '100px', backgroundColor: "gray"}}>
-
-        </div>
+        <Container >
+            <h1>Reverie Sound Review</h1>
+            <div>
+                <Box mx="px">
+                <Button  color="primary">News</Button>
+                <Button color="primary">Forum</Button>
+                </Box>
+            </div>
+        </Container>
     )
 }
 

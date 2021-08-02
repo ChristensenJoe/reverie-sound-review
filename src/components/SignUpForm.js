@@ -2,10 +2,11 @@ import { Input, Button, Box, Grid } from "@material-ui/core"
 import { useState } from "react"
 import sha256 from "sha256";
 import Randomstring from 'randomstring';
+import {useHistory} from "react-router-dom";
 
 
 function SignUpForm({ userData }) {
-
+    const history = useHistory();
     const [formData, setFormData] = useState({
         username: "",
         password: ""
@@ -52,8 +53,7 @@ function SignUpForm({ userData }) {
             })
                 .then(res => res.json())
                 .then(data => {
-                    //setUserState
-                    //route
+                    history.push("/dashboard")
                 })
         }
         else {
@@ -65,12 +65,13 @@ function SignUpForm({ userData }) {
         <Box>
             <form className="form" onSubmit={onSubmitForm}>
 
-                <Grid container justifyContent="center" spacing={3}>
+                <Grid container justifyContent="center" spacing={8}>
                     <Grid item xs={12}>
                         <Input
                             label="username"
                             id="username"
                             placeholder="Username"
+                            required
                             value={formData.username}
                             onChange={onFormChange}
                         />
@@ -80,17 +81,21 @@ function SignUpForm({ userData }) {
                             label="Password"
                             id="password"
                             placeholder="Password"
+                            required
                             value={formData.password}
                             onChange={onFormChange}
                         />
                     </Grid>
                     <Grid item xs={12}>
+                    <Box marginBottom="10px">
                         <Button
                             type="submit"
                             color="primary"
+                            variant="contained"
                             className="form__custom-button">
                             Sign-Up
                         </Button>
+                        </Box>
                     </Grid>
                 </Grid>
             </form>

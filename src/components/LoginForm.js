@@ -1,10 +1,10 @@
 import { Input, Button, Box, Grid } from "@material-ui/core"
 import { useState } from "react"
 import sha256 from "sha256";
-
+import {useHistory} from "react-router-dom"
 
 function LoginForm({ userData }) {
-
+    const history = useHistory();
 
 
     const [formData, setFormData] = useState({
@@ -29,7 +29,7 @@ function LoginForm({ userData }) {
         });
 
         if (isLoggedIn) {
-            //route
+            history.push("/dashboard")
         }
         else {
             alert("Incorrect username/password");
@@ -42,12 +42,13 @@ function LoginForm({ userData }) {
             onSubmit={onSubmitForm}
             >
 
-                <Grid container justifyContent="center" spacing={3}>
+                <Grid container justifyContent="center" spacing={8}>
                     <Grid item xs={12}>
                         <Input
                             label="username"
                             id="username"
                             placeholder="Username"
+                            required
                             value={formData.username}
                             onChange={onChangeForm}
                         />
@@ -57,14 +58,17 @@ function LoginForm({ userData }) {
                             label="Password"
                             id="password"
                             placeholder="Password"
+                            required
                             value={formData.password}
                             onChange={onChangeForm}
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Button type="submit" color="primary" className="form__custom-button">
+                        <Box marginBottom="10px">
+                        <Button type="submit" variant="contained" color="primary" className="form__custom-button">
                             Log in
                         </Button>
+                        </Box>
                     </Grid>
                 </Grid>
             </form>

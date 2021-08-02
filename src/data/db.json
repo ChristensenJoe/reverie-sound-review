@@ -17,6 +17,12 @@
       "hashedPassword": "084242878afe897f1d8efb766a1d5abc2184266e5c549a89dbc9df6d4e8c1939",
       "saltPassword": "8CoDYesIv1JeqNOJjGDI8d6BXfkkXd0v",
       "id": 3
+    },
+    {
+      "username": "secondUser",
+      "hashedPassword": "6dc1fc5ccce2c94b9cafd2de8dd8cae2e8fbaedf71f8aff6b5341a442d3e5529",
+      "saltPassword": "NsihDMr5YNqey8r7Bk9W3Vxjh63G1OXg",
+      "id": 4
     }
   ]
 }
