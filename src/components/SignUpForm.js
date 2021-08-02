@@ -1,20 +1,9 @@
 import {Input, Button, Box, Grid} from "@material-ui/core"
-import {useState} from "react"
 
 
-function LoginForm () {
+function SignUpForm () {
     
-    const [formData, setFormData] = useState({
-        username: "",
-        hashedPassword: "",
-        saltPassword: ""
-    })
-
-    function onChangeForm(e) {
-        setFormData(formData => {return {...formData, [e.target.id]: e.target.value}})
-    }
-
-    console.log(formData)
+    
     return (
         <Box>
              <form className="form">
@@ -24,23 +13,19 @@ function LoginForm () {
                     <Input
                       labelText="username"
                       id="username"
-                      placeholder="Username"
-                      value={formData.username}
-                      onChange={onChangeForm}
+                     placeholder="Username"
                      />
                </Grid>
                <Grid item xs={12}>
                  <Input
                      labelText="Password"
-                     id="hashedPassword"
+                     id="password"
                      placeholder="Password"
-                     value={formData.hashedPassword}
-                     onChange={onChangeForm}
                  />
                </Grid>
             <Grid item xs={12}>
                 <Button type="button" color="primary" className="form__custom-button">
-                    Log in
+                    Sign-Up
                 </Button>
             </Grid>
             </Grid>
@@ -50,4 +35,4 @@ function LoginForm () {
     )
 }
 
-export default LoginForm
+export default SignUpForm

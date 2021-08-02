@@ -1,13 +1,12 @@
-import {Grid, Hidden, Paper, Box} from "@material-ui/core"
-import { FormControl, FormLabel, FormHelperText, Input, InputLabel, TextField } from '@material-ui/core'
+import {Grid, Hidden, Box} from "@material-ui/core"
+import { Button } from '@material-ui/core'
+import LoginForm from "./LoginForm"
+import {useState} from "react"
+import SignUpForm from "./SignUpForm"
 
 function Login() {
     
-    const section = {
-        height: "100%",
-        paddingTop: 5,
-        backgroundColor: "#fff",
-      };
+    const [isShowingLogin, setIsShowingLogin] = useState(true)
 
 
     return (
@@ -22,12 +21,17 @@ function Login() {
             </Grid>
 
             <Grid item xs={12} sm={6}>
-                <Box>
-                    <form >
-                        <input name='email' type='text'></input>
-                    </form>
-                </Box>
-             </Grid>
+            <Box>
+              <div style={{marginBottom: "20px"}}>
+                <Button onClick={() => setIsShowingLogin(true)}>Login</Button>
+                <Button onClick={() => setIsShowingLogin(false)}>Sign-Up</Button>
+             </div>
+              
+
+                {isShowingLogin ?  <LoginForm /> : <SignUpForm />}
+            </Box>
+              
+            </Grid>
 
         </Grid> 
             
