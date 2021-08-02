@@ -1,12 +1,15 @@
 import './App.css';
-import {Routes, Switch} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
+import Login from "./components/Login"
+import Header from "./components/Header"
 
 
 function App() {
   return (
     <div className="App">
+     <Header />
       <Switch>
-        <Routes />
+        <Route to='/' component={() => <Login /> }/>
       </Switch>
     </div>
   );
