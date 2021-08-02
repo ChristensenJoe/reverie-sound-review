@@ -1,10 +1,22 @@
 {
-    "users" : [
-        {
-            "id": 1,
-            "username": "dada",
-            "hashedPassword": "3214asdqw22ed",
-            "saltPassword" : "312311"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "username",
+      "hashedPassword": "e634c94f5142a717f9dbbd8710388242b546059045684ff788dfbdac3a51089a",
+      "saltPassword": "312311"
+    },
+    {
+      "username": "testUser",
+      "hashedPassword": "5a2473df1fbbfa8fc4e83e6d1e527bee68b9e5cc29295a9fdd51bb01806f1c06",
+      "saltPassword": "2tyaq8JKM7eNZLVCv5CrGdM4aR37Pd8I",
+      "id": 2
+    },
+    {
+      "username": "",
+      "hashedPassword": "084242878afe897f1d8efb766a1d5abc2184266e5c549a89dbc9df6d4e8c1939",
+      "saltPassword": "8CoDYesIv1JeqNOJjGDI8d6BXfkkXd0v",
+      "id": 3
+    }
+  ]
 }
