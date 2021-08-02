@@ -1,0 +1,10 @@
+{
+    "users" : [
+        {
+            "id": 1,
+            "username": "dada",
+            "hashedPassword": "3214asdqw22ed",
+            "password_salt" : "312311"
+        }
+    ]
+}
