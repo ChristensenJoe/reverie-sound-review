@@ -18,18 +18,25 @@ function News({ user }) {
     }
 
     useEffect(() => {
-        fetch(`https://newsapi.org/v2/everything?q=classical&apiKey=${API_KEY}&pageSize=10&page=${pageNumber}`)
+        let isMounted = true;
+        fetch(`https://newsapi.org/v2/everything?q=classical&apiKey=${API_KEY}&pageSize=100`)
             .then(res => res.json())
-            .then(data => setNewsData(data.articles));
-    }, [pageNumber])
+            .then(data => {
+                if(isMounted) setNewsData(data.articles)
+            });
+            return () => {isMounted=false}
+    }, [])
 
-    console.log(search);
+    const filteredNewsData = newsData.filter((data) => {
+        if((data.title.toLowerCase().includes(search.value.toLowerCase()))) return true;
+        return false;
+    })
 
 
     return (
         <div>
             <NavBar />
-                <SearchBar
+            <SearchBar
                 style={{
                     marginTop: "20px",
                     marginLeft: "auto",
@@ -37,14 +44,13 @@ function News({ user }) {
                     width: "80%"
                 }}
                 value={search.value}
-                onChange={(newValue) => setSearch({value: newValue})}
-                />
+                onChange={(newValue) => setSearch({ value: newValue })}
+            />
             <Container>
                 <Box
                     border="solid 2px"
                     marginTop="100px"
                     margin="20px"
-                    height="1000px"
                     display="flex"
                     alignItems="top"
                     justifyContent="top"
@@ -52,7 +58,18 @@ function News({ user }) {
                     textAlign="center"
                 >
                     <Grid container spacing={3}>
-
+                    {
+                            filteredNewsData.map((data) => {
+                                return (
+                                    <Grid item xs={12}
+                                    key={data.url}
+                                    >
+                                        {/** Add Card Here */}
+                                        <h2>{data.title}</h2>
+                                    </Grid>
+                                )
+                            })
+                        }
                     </Grid>
                 </Box>
             </Container>
