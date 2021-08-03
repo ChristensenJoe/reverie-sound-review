@@ -24,13 +24,13 @@ function News({ user }) {
             .then(res => res.json())
             .then(data => {
                 if (isMounted) {
-                    if((data.status==="ok") && (data.articles.length > 0)) {
+                    if ((data.status === "ok") && (data.articles.length > 0)) {
                         setNewsData(data.articles)
                     }
                     else {
-                        if(pageNumber !== 1) {
-                        setPageNumber((pageNumber) => pageNumber-1) 
-                        alert("You are on the last page")
+                        if (pageNumber !== 1) {
+                            setPageNumber((pageNumber) => pageNumber - 1)
+                            alert("You are on the last page")
                         }
                     }
                 }
@@ -50,10 +50,9 @@ function News({ user }) {
             alert("You are on the first page");
         }
     }
-    
 
     return (
-        <div style={{background: "#ff8600"}}>
+        <div>
             <NavBar />
             <SearchBar
                 style={{

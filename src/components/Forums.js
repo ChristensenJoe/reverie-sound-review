@@ -27,6 +27,7 @@ function Forums({ user }) {
         return false;
     })
 
+
     return (
         <div>
             <NavBar />

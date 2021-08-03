@@ -24,7 +24,11 @@ function Login({ updateUser }) {
     return (
 
         <ThemeProvider theme={theme}>
-            <div>
+            <div
+            style={{
+                background: "white"
+            }}
+            >
 
                 <Grid container spacing={1}>
 
