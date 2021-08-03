@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 import SignUpForm from "./SignUpForm"
 import logo from "../images/logo.gif"
 import {ThemeProvider} from "@material-ui/core"
-import theme from "./theme"
+import theme from "../styles/theme"
 
  
 function Login() {
@@ -18,12 +18,12 @@ function Login() {
             .then(res => res.json())
             .then(data => {
                 setUserData(data);
-            });
+            })
     }, [])
 
     return (
      
-   
+    <ThemeProvider theme={theme}>
        <div>
             
             <Grid container spacing={1}>
@@ -58,11 +58,9 @@ function Login() {
                                         margin: "18px"
                                     }}
                                 >
-                                <ThemeProvider theme={theme} >
+                                
                                     <ButtonGroup
-                                        disableElevation 
-                                        variant="contained" 
-                                        color="primary"
+                                        disableElevation variant="contained" color="primary"
                                     >
                                         <Button
                                             variant="contained"
@@ -75,7 +73,7 @@ function Login() {
                                             onClick={() => setIsShowingLogin(false)}>Sign-Up
                                         </Button>
                                     </ButtonGroup>
-                                </ThemeProvider>
+                                
                                 </div>
                                 <hr
                                     style={{
@@ -99,7 +97,7 @@ function Login() {
                 </Grid>
             </Grid>
         </div>
-    
+    </ThemeProvider>
     );
 }
 
