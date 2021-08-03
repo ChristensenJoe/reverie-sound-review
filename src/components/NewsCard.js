@@ -22,8 +22,8 @@ function NewsCard({data}) {
   const classes = useStyles();
   const {title, author, content} = data
   return (
-    <Card className={classes.root}>
-      <CardContent style={{background: "#bd632f"}}>
+    <Card className={classes.root} variant="outlined">
+      <CardContent style={{background: "#FFFFFF"}}>
         <Typography className={classes.title} color="textSecondary" gutterBottom>
           {author}
         </Typography>

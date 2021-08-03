@@ -53,7 +53,7 @@ function News({ user }) {
     
 
     return (
-        <div>
+        <div style={{background: "#ff8600"}}>
             <NavBar />
             <SearchBar
                 style={{

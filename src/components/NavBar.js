@@ -24,12 +24,12 @@ export default function ButtonAppBar() {
     paddingLeft: "10px"
   }
   const activeLinkStyles = {
-    backgroundColor: "#274472"
+    backgroundColor: "#fe7f2d"
   }
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar style={{background: "black"}} position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             Reverie Sound Review
