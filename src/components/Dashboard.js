@@ -1,9 +1,10 @@
-import Header from "./Header"
+
+import TemporaryDrawer from "./NavBar"
 
 function Dashboard() {
     return (
         <div>
-            <Header />
+            <TemporaryDrawer />
 
         </div>
     );
