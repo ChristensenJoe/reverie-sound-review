@@ -7,11 +7,11 @@ const theme = createTheme({
         primary: {
             main: '#d84315'
         },
-    
-    secondary: {
-        main: '#66bb6a',
-        contrastText: "#ffffff"
-        } 
+
+        secondary: {
+            main: '#66bb6a',
+            contrastText: "#ffffff"
+        }
     }
 }
 )
