@@ -1,10 +1,16 @@
+import {useHistory} from "react-router-dom";
+import NavBar from "./NavBar";
 
-import TemporaryDrawer from "./NavBar"
+function Dashboard({user}) {
+    const history = useHistory();
 
-function Dashboard() {
+    if(!user) {
+        history.push("/");
+    }
+
     return (
         <div>
-            <TemporaryDrawer />
+            <NavBar />
 
         </div>
     );

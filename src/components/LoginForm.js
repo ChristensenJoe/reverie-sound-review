@@ -3,7 +3,7 @@ import { useState } from "react"
 import sha256 from "sha256";
 import {useHistory} from "react-router-dom"
 
-function LoginForm({ userData }) {
+function LoginForm({ userData, updateUser }) {
     const history = useHistory();
 
 
@@ -29,6 +29,7 @@ function LoginForm({ userData }) {
         });
 
         if (isLoggedIn) {
+            updateUser(formData.username);
             history.push("/dashboard")
         }
         else {

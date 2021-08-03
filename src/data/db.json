@@ -23,6 +23,18 @@
       "hashedPassword": "6dc1fc5ccce2c94b9cafd2de8dd8cae2e8fbaedf71f8aff6b5341a442d3e5529",
       "saltPassword": "NsihDMr5YNqey8r7Bk9W3Vxjh63G1OXg",
       "id": 4
+    },
+    {
+      "username": "testUser",
+      "hashedPassword": "2f1b2853b1e0563e7a91aaa384e66fabb8ffff45269032f1f78835c42df63ed9",
+      "saltPassword": "S6f1rnx66Q2kq5vtN4qAkGzB0cdylb8Q",
+      "id": 5
+    },
+    {
+      "username": "newTestUser",
+      "hashedPassword": "00c8a535a2e2eec55a3e6bfcd00cc1e5e48cd32ece35601d3a94f198c5211ce7",
+      "saltPassword": "QEpvtxLuNMh5IvxMpWd7BsPQ25IE4RiG",
+      "id": 6
     }
   ]
 }

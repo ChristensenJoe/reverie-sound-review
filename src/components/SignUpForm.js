@@ -5,7 +5,7 @@ import Randomstring from 'randomstring';
 import {useHistory} from "react-router-dom";
 
 
-function SignUpForm({ userData }) {
+function SignUpForm({ userData, updateUser }) {
     const history = useHistory();
     const [formData, setFormData] = useState({
         username: "",
@@ -53,7 +53,8 @@ function SignUpForm({ userData }) {
             })
                 .then(res => res.json())
                 .then(data => {
-                    history.push("/dashboard")
+                    updateUser(formData.username);
+                    history.push("/dashboard");
                 })
         }
         else {
