@@ -42,5 +42,13 @@
       "saltPassword": "dLQEdMWkkwsd1wZOdPtFG7qGJt0pn88m",
       "id": 7
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "author": "Jim Henson",
+      "title": "Muppets in Music",
+      "content": "Post Contents"
+    }
   ]
 }
