@@ -64,7 +64,7 @@ function LoginForm({ userData }) {
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Box marginBottom="10px">
+                        <Box marginBottom="4vh">
                         <Button type="submit" variant="contained" color="primary" className="form__custom-button">
                             Log in
                         </Button>

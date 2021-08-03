@@ -4,8 +4,10 @@ import LoginForm from "./LoginForm"
 import { useState, useEffect } from "react"
 import SignUpForm from "./SignUpForm"
 import logo from "../images/logo.gif"
+import {ThemeProvider} from "@material-ui/core"
+import theme from "./theme"
 
-
+ 
 function Login() {
 
     const [isShowingLogin, setIsShowingLogin] = useState(true)
@@ -20,8 +22,10 @@ function Login() {
     }, [])
 
     return (
-        <div>
-
+     
+   
+       <div>
+            
             <Grid container spacing={1}>
 
                 <Grid item xs={12} sm={5}>
@@ -35,38 +39,47 @@ function Login() {
                         display="flex"
                         alignItems="center"
                         justifyContent="center"
-                        height="99vh"
+                        height="100vh"
                         overflow="hidden"
                     >
                         <div>
 
                             <img
+                                height="400vh"
                                 alt="logo"
                                 src={logo}
                             />
                             <div
-                                style={{ border: "solid 2px" }}
+                                style={{border: "solid 2px"}}
+                                
                             >
                                 <div
                                     style={{
                                         margin: "18px"
                                     }}
                                 >
+                                <ThemeProvider theme={theme} >
                                     <ButtonGroup
-                                        disableElevation variant="contained" color="primary"
+                                        disableElevation 
+                                        variant="contained" 
+                                        color="primary"
                                     >
                                         <Button
+                                            variant="contained"
+                                            color="primary"
                                             onClick={() => setIsShowingLogin(true)}>Login
                                         </Button>
                                         <Button
+                                            variant="contained"
+                                            color="secondary"
                                             onClick={() => setIsShowingLogin(false)}>Sign-Up
                                         </Button>
                                     </ButtonGroup>
-
+                                </ThemeProvider>
                                 </div>
                                 <hr
                                     style={{
-                                        width: "80%",
+                                        width: "60%",
                                         marginBottom: "40px"
                                     }}
                                 />
@@ -86,6 +99,7 @@ function Login() {
                 </Grid>
             </Grid>
         </div>
+    
     );
 }
 

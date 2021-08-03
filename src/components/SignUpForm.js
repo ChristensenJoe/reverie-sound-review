@@ -88,11 +88,12 @@ function SignUpForm({ userData }) {
                     </Grid>
                     <Grid item xs={12}>
                     <Box marginBottom="10px">
+                       
                         <Button
                             type="submit"
                             color="primary"
                             variant="contained"
-                            className="form__custom-button">
+                            className="form__custom-button" >
                             Sign-Up
                         </Button>
                         </Box>
