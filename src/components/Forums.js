@@ -31,8 +31,10 @@ function Forums({ user }) {
                         }
                         else {
                             setPosts([]);
-                            setPageNumber((pageNumber) => pageNumber-1);
-                            alert("You are on the last page");
+                            if(pageNumber > 1) {
+                                setPageNumber((pageNumber) => pageNumber-1);
+                                alert("You are on the last page");
+                            }
                         }
                     }
                 })
@@ -41,7 +43,6 @@ function Forums({ user }) {
     }, [pageNumber, search])
 
 
-    console.log(pageNumber);
 
     function onNextClick() {
         setPageNumber((pageNumber) => pageNumber+1)
@@ -66,11 +67,13 @@ function Forums({ user }) {
                 onCancelSearch={
                     () => {
                         setSearch({ value: "" });
+                        setPageNumber(1);
                     }
                 }
                 onRequestSearch={
                     (newValue) => {
                         setSearch({ value: newValue })
+                        setPageNumber(1);
                     }
                 }
             />
@@ -105,7 +108,7 @@ function Forums({ user }) {
                                 <>
                                     <Button
                                         name="previous"
-                                        disableElevation
+                                        
                                         variant="contained"
                                         color="primary"
                                         style={{
@@ -118,7 +121,7 @@ function Forums({ user }) {
                                     </Button>
                                     <Button
                                         name="next"
-                                        disableElevation
+                                        
                                         variant="contained"
                                         color="primary"
                                         style={{

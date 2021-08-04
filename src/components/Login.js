@@ -35,7 +35,7 @@ function Login({ updateUser }) {
 
                     <Grid item xs={12} sm={5}>
                         <Box overflow="hidden" height="100vh">
-                            <img class="w3-animate-left" style={{ objectFit: "contain" }} alt="testimg" src="https://cdn.pixabay.com/photo/2020/01/27/19/22/piano-4798138_1280.jpg"></img>
+                            <img className="w3-animate-left" style={{ objectFit: "contain" }} alt="testimg" src="https://cdn.pixabay.com/photo/2020/01/27/19/22/piano-4798138_1280.jpg"></img>
                         </Box>
                     </Grid>
 
@@ -51,7 +51,7 @@ function Login({ updateUser }) {
                             <div>
 
                                 <img
-                                    class="w3-animate-top"
+                                    className="w3-animate-top"
                                     height="400px"
                                     alt="logo"
                                     src={rev}
@@ -67,7 +67,9 @@ function Login({ updateUser }) {
                                     >
 
                                         <ButtonGroup
-                                            disableElevation variant="contained" color="primary"
+                                            
+                                            variant="contained" 
+                                            color="primary"
                                         >
                                             <Button
                                                 className="w3-animate-zoom"

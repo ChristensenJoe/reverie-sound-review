@@ -29,7 +29,7 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar style={{background: "black"}} position="static" disableElevation>
+      <AppBar style={{background: "black"}} position="static" >
         <Toolbar>
           <img src={rev} height="5%" width="5%" alt='logo'></img>
           <Typography variant="h6" className={classes.title}>

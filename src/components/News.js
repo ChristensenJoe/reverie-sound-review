@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
-import { Box, Grid, Button, ButtonGroup, Container } from "@material-ui/core"
+import { Box, Grid, Button, Container } from "@material-ui/core"
 import SearchBar from "material-ui-search-bar";
 import NewsCard from "./NewsCard";
 import '../styles/w3.css'
@@ -104,7 +104,7 @@ function News({ user }) {
                                 <>
                                     <Button
                                         name="previous"
-                                        disableElevation
+                                        
                                         variant="contained"
                                         color="primary"
                                         style={{
@@ -118,7 +118,7 @@ function News({ user }) {
                                     </Button>
                                     <Button
                                         name="next"
-                                        disableElevation
+                                        
                                         variant="contained"
                                         color="primary"
                                         style={{
