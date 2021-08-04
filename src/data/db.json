@@ -4,43 +4,15 @@
       "id": 1,
       "username": "username",
       "hashedPassword": "e634c94f5142a717f9dbbd8710388242b546059045684ff788dfbdac3a51089a",
-      "saltPassword": "312311"
+      "saltPassword": "312311",
+      "profileImage": "https://iso.500px.com/wp-content/uploads/2015/03/business_cover.jpeg"
     },
     {
       "username": "testUser",
-      "hashedPassword": "5a2473df1fbbfa8fc4e83e6d1e527bee68b9e5cc29295a9fdd51bb01806f1c06",
-      "saltPassword": "2tyaq8JKM7eNZLVCv5CrGdM4aR37Pd8I",
+      "hashedPassword": "2970df6816a6c4a4591873e2f3c3366f00157778a9c6ca0c9128ab1a3c5c2f91",
+      "saltPassword": "lq2gpDWAUGCbS35mWD5q2XvYHvy1GbPZ",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
       "id": 2
-    },
-    {
-      "username": "",
-      "hashedPassword": "084242878afe897f1d8efb766a1d5abc2184266e5c549a89dbc9df6d4e8c1939",
-      "saltPassword": "8CoDYesIv1JeqNOJjGDI8d6BXfkkXd0v",
-      "id": 3
-    },
-    {
-      "username": "secondUser",
-      "hashedPassword": "6dc1fc5ccce2c94b9cafd2de8dd8cae2e8fbaedf71f8aff6b5341a442d3e5529",
-      "saltPassword": "NsihDMr5YNqey8r7Bk9W3Vxjh63G1OXg",
-      "id": 4
-    },
-    {
-      "username": "testUser",
-      "hashedPassword": "2f1b2853b1e0563e7a91aaa384e66fabb8ffff45269032f1f78835c42df63ed9",
-      "saltPassword": "S6f1rnx66Q2kq5vtN4qAkGzB0cdylb8Q",
-      "id": 5
-    },
-    {
-      "username": "newTestUser",
-      "hashedPassword": "00c8a535a2e2eec55a3e6bfcd00cc1e5e48cd32ece35601d3a94f198c5211ce7",
-      "saltPassword": "QEpvtxLuNMh5IvxMpWd7BsPQ25IE4RiG",
-      "id": 6
-    },
-    {
-      "username": "test",
-      "hashedPassword": "4b03ec905d40327bcb49a393f3e3649d4af2339f6be040f1d9618fa13518bf01",
-      "saltPassword": "dLQEdMWkkwsd1wZOdPtFG7qGJt0pn88m",
-      "id": 7
     }
   ],
   "posts": [

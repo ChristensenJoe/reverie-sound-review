@@ -1,3 +1,4 @@
+import {useHistory} from "react-router-dom";
 import NavBar from "./NavBar"
 import { OutlinedInput, Grid, Button } from "@material-ui/core"
 import { useState, } from "react"
@@ -7,11 +8,15 @@ import { ThemeProvider } from "@material-ui/styles"
 
 
 function NewForumPost({user}) {
-
+    const history = useHistory();
     const [formData, setFormData] = useState({
         title: "",
         content: ""
     })
+
+    if(!user) {
+        history.push("/")
+    }
 
     function onChangeForm(e) {
         setFormData(formData => { return { ...formData, [e.target.id]: e.target.value } })
@@ -45,7 +50,9 @@ function NewForumPost({user}) {
 
     return (
         <>
-            <NavBar />
+            <NavBar 
+                user={user}
+            />
             <ThemeProvider theme={theme}>
 
                 <div
@@ -86,7 +93,7 @@ function NewForumPost({user}) {
                                 style={{ background: "white", width: "40%", marginLeft: "26vw", marginTop: "10vh" }}
                             />
                         </Grid>
-                        <Grid justifyContent="center" item xs={12}>
+                        <Grid item xs={12}>
                             <OutlinedInput
                                 label="content"
                                 multiline

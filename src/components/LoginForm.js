@@ -6,6 +6,7 @@ import '../styles/w3.css'
 
 function LoginForm({ userData, updateUser }) {
     const history = useHistory();
+    let profileImg = "";
 
 
     const [formData, setFormData] = useState({
@@ -25,12 +26,16 @@ function LoginForm({ userData, updateUser }) {
                 
                 if (hashedPassword === data.hashedPassword) {
                     isLoggedIn = true;
+                    profileImg = data.profileImage;
                 }
             }
         });
 
         if (isLoggedIn) {
-            updateUser(formData.username);
+            updateUser({
+                username: formData.username,
+                profileImage: profileImg
+            });
             history.push("/dashboard")
         }
         else {

@@ -42,7 +42,8 @@ function SignUpForm({ userData, updateUser }) {
             const newUser = {
                 username: formData.username,
                 hashedPassword: hashedPassword,
-                saltPassword: saltPassword
+                saltPassword: saltPassword,
+                profileImage: ""
             }
 
             fetch("http://localhost:8000/users", {
@@ -54,7 +55,10 @@ function SignUpForm({ userData, updateUser }) {
             })
                 .then(res => res.json())
                 .then(data => {
-                    updateUser(formData.username);
+                    updateUser({
+                        username: formData.username,
+                        profileImage: newUser.profileImage
+                    });
                     history.push("/dashboard");
                 })
         }

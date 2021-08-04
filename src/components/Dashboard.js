@@ -41,19 +41,21 @@ function Dashboard({ user }) {
                     SCROLL DOWN</span>
             </div>
 
-            <NavBar />
+            <NavBar 
+                user={user}
+            />
 
             <div
                 style={{
-                    color: "#777",
+                    color: "#fe7f2d",
                     marginTop: "70%",
                     height: "10%",
-                    backgroundColor: "white",
-                    textAlign: "center",
+                    backgroundColor: "#111",
+                    textAlign: "justify",
                     padding: "50px 80px"
                 }}
             >
-                <h3 style={{ textAlign: "center" }}>Hello {user}</h3>
+                <h3 style={{ textAlign: "center" }}>Hello {user.username}</h3>
                 <p style={{ textAlign: "center" }}>Reviews // Articles // Forum</p>
             </div>
 

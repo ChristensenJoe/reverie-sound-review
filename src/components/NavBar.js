@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Typography, Button, Divider } from '@material-ui/core';
+import { Box, AppBar, Toolbar, Typography, Button, Divider } from '@material-ui/core';
 import rev from '../images/rev.png'
+import userImage from "../images/profile-image-placeholder.png"
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -15,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar({user}) {
   const classes = useStyles();
 
   const linkStyles = {
@@ -29,11 +30,11 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar style={{background: "black"}} position="static" >
+      <AppBar style={{ background: "black" }} position="static" >
         <Toolbar>
           <img src={rev} height="5%" width="5%" alt='logo'></img>
           <Typography variant="h6" className={classes.title}>
-            
+
           </Typography>
           <Button
             component={NavLink}
@@ -60,7 +61,33 @@ export default function ButtonAppBar() {
           >Forums
           </Button>
           <Divider orientation="vertical" flexItem />
-          <Button color="inherit">Login</Button>
+          <Button
+            color="inherit"
+            component={NavLink}
+            to="/settings"
+            style={linkStyles}
+            activeStyle={activeLinkStyles}
+          >
+            <Box
+              border={1}
+              borderRadius="50%"
+              overflow="hidden"
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              height="50px"
+              width="50px"
+            >
+              <img
+                style={{
+                  width: "100%",
+                  height: "auto"
+                }}
+                src={user.profileImage!=="" ? user.profileImage : userImage}
+                alt="profile"
+              />
+            </Box>
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

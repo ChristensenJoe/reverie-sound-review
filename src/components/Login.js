@@ -15,20 +15,25 @@ function Login({ updateUser }) {
     const [userData, setUserData] = useState([]);
 
     useEffect(() => {
+        let isMounted = true;
         fetch("http://localhost:8000/users")
             .then(res => res.json())
             .then(data => {
-                setUserData(data);
+                if (isMounted) {
+                    setUserData(data);
+                }
             })
+
+        return () => { isMounted = false }
     }, [])
 
     return (
 
         <ThemeProvider theme={theme}>
             <div
-            style={{
-                background: "white"
-            }}
+                style={{
+                    background: "white"
+                }}
             >
 
                 <Grid container spacing={1}>
@@ -67,8 +72,8 @@ function Login({ updateUser }) {
                                     >
 
                                         <ButtonGroup
-                                            
-                                            variant="contained" 
+
+                                            variant="contained"
                                             color="primary"
                                         >
                                             <Button

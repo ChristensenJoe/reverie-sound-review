@@ -5,10 +5,12 @@ import Dashboard from "./components/Dashboard.js"
 import News from "./components/News.js";
 import Forums from "./components/Forums.js"
 import NewsDetails from "./components/NewsDetails.js";
+import UserSettings from "./components/UserSettings.js";
+import NewForumPost from "./components/NewForumPost.js";
 
 function App() {
-  const [user, setUser] = useState(null);
-  const [selectedNewsData, setSelectedNewsData] = useState([]);
+  const [user, setUser] = useState(false);
+  const [selectedNewsData, setSelectedNewsData] = useState({article: {content: ""}, image: ""});
 
   function updateUser(newUser) {
     setUser(newUser);
@@ -21,7 +23,7 @@ function App() {
           path='/newsdetails'
           component={() =>
             <NewsDetails
-              article={selectedNewsData}
+              data={selectedNewsData}
               user={user}
             />}
         />
@@ -41,9 +43,24 @@ function App() {
             />}
         />
         <Route
+          path='/newforumpost'
+          component={() =>
+            <NewForumPost
+              user={user}
+            />}
+        />
+        <Route
           path='/forums'
           component={() =>
             <Forums
+              user={user}
+            />}
+        />
+        <Route
+          path='/settings'
+          component={() =>
+            <UserSettings
+              setUser={setUser}
               user={user}
             />}
         />
