@@ -13,6 +13,13 @@
       "saltPassword": "lq2gpDWAUGCbS35mWD5q2XvYHvy1GbPZ",
       "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
       "id": 2
+    },
+    {
+      "username": "username",
+      "hashedPassword": "4efb260fa5c826cc10833b3afa6d5b71ee78e197dd51c63959f6938e46e84a76",
+      "saltPassword": "zXZzo0s6FsBK1VwKff2HXd1Wm91uiy2A",
+      "profileImage": "",
+      "id": 3
     }
   ],
   "posts": [

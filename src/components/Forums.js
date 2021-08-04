@@ -53,9 +53,18 @@ function Forums({ user }) {
         else alert("You are on the first page!")
     }
 
+    function randomImage(){
+
+        let randomNumber = Math.floor(Math.random() * 100)
+      
+        
+          return `https://picsum.photos/300/200?random=${randomNumber}`
+      
+      }
+
     return (
         <div>
-            <NavBar />
+            <NavBar user={user}/>
             <Button
             component={NavLink}
             to="/newforumpost"
@@ -98,13 +107,14 @@ function Forums({ user }) {
                     <Grid container spacing={3}>
                         {
                             posts.map((post) => {
+                                let image = randomImage();
                                 return (
                                     <Grid
                                         item
                                         xs={4}
                                         key={post.id}
                                     >
-                                        <NewsCard data={post} />
+                                        <NewsCard data={post} image={image} />
 
                                     </Grid>
                                 );

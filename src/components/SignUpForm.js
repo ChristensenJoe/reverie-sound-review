@@ -64,6 +64,10 @@ function SignUpForm({ userData, updateUser }) {
         }
         else {
             alert("Username taken")
+            setFormData({
+                username: "",
+                password: ""
+            })
         }
     }
 

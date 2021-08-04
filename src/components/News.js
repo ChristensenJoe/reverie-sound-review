@@ -7,7 +7,7 @@ import NewsCard from "./NewsCard";
 import '../styles/w3.css'
 
 function News({ user, setSelectedNewsData }) {
-    const API_KEY = "ed1ad5bc580d4542b0e4eccb9fc42a26";
+    const API_KEY = "fb75d9813cb84124a7fbaa9c49336426";
     const [newsData, setNewsData] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
     const [search, setSearch] = useState({
@@ -52,9 +52,18 @@ function News({ user, setSelectedNewsData }) {
         }
     }
     
+    function randomImage(){
+
+        let randomNumber = Math.floor(Math.random() * 100)
+      
+        
+          return `https://picsum.photos/300/200?random=${randomNumber}`
+      
+      }
+
     return (
         <div>
-            <NavBar />
+            <NavBar user={user} />
             <SearchBar
                 style={{
                     marginTop: "20px",
@@ -90,15 +99,16 @@ function News({ user, setSelectedNewsData }) {
                     <Grid container spacing={4}>
                         {
                             newsData.map((data) => {
+                                let image = randomImage();
                                 return (
                                     <Grid item xs={4}
                                         key={data.url}
                                     >
                                         <Link 
                                         to="/newsdetails"
-                                        onClick={() => {setSelectedNewsData(data)}}
+                                        onClick={() => {setSelectedNewsData({article: data, image: image})}}
                                         >
-                                        <NewsCard data={data}/>
+                                        <NewsCard data={data} image={image} />
                                         </Link>
                                     </Grid>
                                 )

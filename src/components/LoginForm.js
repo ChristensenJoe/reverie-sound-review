@@ -40,6 +40,10 @@ function LoginForm({ userData, updateUser }) {
         }
         else {
             alert("Incorrect username/password");
+            setFormData({
+                username: "",
+                password: ""
+            })
         }
     }
 

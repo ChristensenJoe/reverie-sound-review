@@ -1,89 +1,58 @@
 import { useHistory } from "react-router-dom";
-import { Container, Grid, Box } from "@material-ui/core";
 import NavBar from "./NavBar";
+import "../styles/w3.css"
+import { ThemeProvider, Button } from "@material-ui/core"
+import theme from "../styles/theme.js"
 
-function NewsDetails({ user, article }) {
+function NewsDetails({ user, data }) {
     const history = useHistory();
 
     if (!user) {
         history.push("/")
     }
 
-    console.log(article);
+    const { article } = data
+
+    console.log(article.content.split("[")[0])
+
     return (
         <>
-            <NavBar />
-            <Container>
-                <Grid container spacing={3}>
-                    <Grid
-                        style={{
-                            margin: "30px",
-                            border: "solid 2px",
-                            height: "800px",
+            <ThemeProvider theme={theme}>
+                <NavBar user={user}/>
+                <header className="bgimg w3-display-container w3-grayscale-min" id="home" >
+                    <div>
+                        <img height="100%" width="100%" src='https://cdn.pixabay.com/photo/2018/03/31/23/27/people-3279617_1280.jpg' alt="hi" />
+                    </div>
 
-                        }}
-                        item
-                        xs={12}
-                    >
+                    <div className="w3-display-middle w3-center w3-black w3-card-4">
+                        <span className="w3-text-white" style={{ fontSize: "30px" }}>{article.title}</span>
+                    </div>
+                    <div className="w3-display-bottommiddle w3-center w3-padding-large w3-black">
+                        <span className="w3-text-white" style={{ fontSize: "20px" }}>Author: {article.author}</span>
+                    </div>
+                </header>
 
-                        <Grid container >
+                <div className="w3-sand w3-grayscale w3-large"></div>
 
-                            <Grid
-                                item
-                                xs={12}
-                                style={{
-                                    textAlign: "center"
-                                }}
-                            >
-                                <Box
-                                    border={1}
-                                    borderRadius={16}
-                                    overflow="hidden"
-                                    display="flex"
-                                    justifyContent="center"
-                                    alignItems="center"
-                                    height="400px"
-                                >
-                                    <img
-                                        src={article.urlToImage}
-                                        alt="news" />
-                                </Box>
-
-                                <Box
-                                    textAlign="center"
-                                >
-                                    <h1>{article.title}</h1>
-                                </Box>
-
-                                <Box
-                                    textAlign="center"
-                                >
-                                    <h6>{article.author}</h6>
-                                </Box>
-                            </Grid>
-
-                            <Grid item xs={12}>
-                                <h6>Details</h6>
-                            </Grid>
+                <div className="w3-container" id="about">
+                    <h5 className="w3-center w3-padding-64"><span className="w3-tag w3-wide w3-orange">SYNOPSIS</span></h5>
+                </div>
+                <div style={{ marginRight: "100px", marginLeft: "100px" }}>{article.content.split("[")[0]}</div>
+                <br></br>
+                <br></br>
+                <Button
+                    className="w3-display-bottommiddle"
+                    variant="contained"
+                    color="primary"
+                    onClick={() => {window.location.href = article.url;}}
+                >Continue Reading
+                </Button>
+            </ThemeProvider>
 
 
-                        </Grid>
 
-                    </Grid>
-                    <Grid
-                        style={{
-                            margin: "30px",
-                            border: "solid 2px",
-                            height: "300px",
 
-                        }}
-                        item
-                        xs={12}
-                    >
 
-                    </Grid>
-                </Grid>
-            </Container>
         </>
     );
 }
