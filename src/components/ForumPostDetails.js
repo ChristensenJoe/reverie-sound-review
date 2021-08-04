@@ -1,10 +1,17 @@
-import { useHistory } from "react-router-dom"
+import { useHistory } from "react-router-dom";
+import NavBar from "./NavBar";
+import "../styles/w3.css"
+import { ThemeProvider, Button } from "@material-ui/core"
+import theme from "../styles/theme.js"
+
 function ForumPostDetails ({data, user}) {
     const history = useHistory();
     
     if(!user) {
         history.push("/")
     }
+
+    console.log(data)
     
     return (
         <ThemeProvider theme={theme}>
@@ -15,10 +22,10 @@ function ForumPostDetails ({data, user}) {
                     </div>
 
                     <div className="w3-display-middle w3-center w3-black w3-card-4">
-                        <span className="w3-text-white" style={{ fontSize: "30px" }}>{article.title}</span>
+                        <span className="w3-text-white" style={{ fontSize: "30px" }}>{data.article.title}</span>
                     </div>
                     <div className="w3-display-bottommiddle w3-center w3-padding-large w3-black">
-                        <span className="w3-text-white" style={{ fontSize: "20px" }}>Author: {article.author}</span>
+                        <span className="w3-text-white" style={{ fontSize: "20px" }}>Author: {data.article.author}</span>
                     </div>
                 </header>
 
@@ -27,16 +34,9 @@ function ForumPostDetails ({data, user}) {
                 <div className="w3-container" id="about">
                     <h5 className="w3-center w3-padding-64"><span className="w3-tag w3-wide w3-orange">SYNOPSIS</span></h5>
                 </div>
-                <div style={{ marginRight: "100px", marginLeft: "100px" }}>{article.content.split("[")[0]}</div>
+                <div style={{ marginRight: "100px", marginLeft: "100px" }}>{data.article.content}</div>
                 <br></br>
                 <br></br>
-                <Button
-                    className="w3-display-bottommiddle"
-                    variant="contained"
-                    color="primary"
-                    onClick={() => {window.location.href = article.url;}}
-                >Continue Reading
-                </Button>
             </ThemeProvider>
     )
 }

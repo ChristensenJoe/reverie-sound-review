@@ -28,7 +28,7 @@ function NewForumPost({user}) {
         const newPost = {
             title: formData.title,
             content: formData.content,
-            author: user
+            author: user.username
         }
 
         let config ={

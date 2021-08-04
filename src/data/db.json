@@ -20,6 +20,13 @@
       "saltPassword": "zXZzo0s6FsBK1VwKff2HXd1Wm91uiy2A",
       "profileImage": "",
       "id": 3
+    },
+    {
+      "username": "JohnRon",
+      "hashedPassword": "085e5fd4f74d4245f88e46b844cde971d2d0bec7dc9a9fe2e7b1106b5246eef5",
+      "saltPassword": "rL44sq4WZkcrDeGZaggAL4ifp7n3OOvH",
+      "profileImage": "",
+      "id": 4
     }
   ],
   "posts": [
@@ -124,6 +131,24 @@
       "content": "Lolol",
       "author": "test",
       "id": 17
+    },
+    {
+      "title": "John",
+      "content": "Hello",
+      "author": "username",
+      "id": 18
+    },
+    {
+      "title": "John",
+      "content": "Hello",
+      "author": "username",
+      "id": 19
+    },
+    {
+      "title": "Joe",
+      "content": "Hello\n",
+      "author": "JohnRon",
+      "id": 20
     }
   ],
   "comments": [
