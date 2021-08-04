@@ -122,5 +122,17 @@
       "title": "Muppets in Music",
       "content": "Post Contents"
     }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 12,
+      "author": "Jim Henson",
+      "content": "Post Contents",
+      "likes": 12,
+      "dislikes": 21,
+      "likedUsers": ["testUser", "user"],
+      "dislikedUsers": []
+    }
   ]
 }

@@ -92,6 +92,7 @@ function Forums({ user }) {
                                         xs={12}
                                         key={post.id}
                                     >
+                                        {/** Add Card */}
                                         <h2>{post.title}</h2>
                                     </Grid>
                                 );
