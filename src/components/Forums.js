@@ -1,11 +1,11 @@
-import { useHistory, NavLink } from "react-router-dom";
+import { useHistory, NavLink, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Grid, Box, Container, Button } from "@material-ui/core"
 import NavBar from "./NavBar";
 import SearchBar from "material-ui-search-bar";
 import NewsCard from "./NewsCard"
 
-function Forums({ user }) {
+function Forums({ user, setSelectedForumData }) {
     const [posts, setPosts] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
     const [search, setSearch] = useState({
@@ -114,7 +114,11 @@ function Forums({ user }) {
                                         xs={4}
                                         key={post.id}
                                     >
+                                    <Link
+                                    to="/postdetails"
+                                    onClick={() => {setSelectedForumData({article: post, image: image})}}>
                                         <NewsCard data={post} image={image} />
+                                    </Link>
 
                                     </Grid>
                                 );
