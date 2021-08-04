@@ -1,4 +1,4 @@
-import { useHistory } from "react-router-dom";
+import { useHistory, Link} from "react-router-dom";
 import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import { Box, Grid, Button, Container } from "@material-ui/core"
@@ -6,7 +6,7 @@ import SearchBar from "material-ui-search-bar";
 import NewsCard from "./NewsCard";
 import '../styles/w3.css'
 
-function News({ user }) {
+function News({ user, setSelectedNewsData }) {
     const API_KEY = "ed1ad5bc580d4542b0e4eccb9fc42a26";
     const [newsData, setNewsData] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
@@ -51,7 +51,7 @@ function News({ user }) {
             alert("You are on the first page");
         }
     }
-
+    
     return (
         <div>
             <NavBar />
@@ -94,7 +94,12 @@ function News({ user }) {
                                     <Grid item xs={4}
                                         key={data.url}
                                     >
-                                        <NewsCard data={data} />
+                                        <Link 
+                                        to="/newsdetails"
+                                        onClick={() => {setSelectedNewsData(data)}}
+                                        >
+                                        <NewsCard data={data}/>
+                                        </Link>
                                     </Grid>
                                 )
                             })
