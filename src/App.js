@@ -4,9 +4,11 @@ import Login from "./components/Login.js"
 import Dashboard from "./components/Dashboard.js"
 import News from "./components/News.js";
 import Forums from "./components/Forums.js"
+import NewsDetails from "./components/NewsDetails.js";
 
 function App() {
   const [user, setUser] = useState(null);
+  const [selectedNewsData, setSelectedNewsData] = useState([]);
 
   function updateUser(newUser) {
     setUser(newUser);
@@ -15,6 +17,14 @@ function App() {
   return (
     <div className="App">
       <Switch>
+        <Route
+          path='/newsdetails'
+          component={() =>
+            <NewsDetails
+              article={selectedNewsData}
+              user={user}
+            />}
+        />
         <Route
           path='/dashboard'
           component={() =>
@@ -26,6 +36,7 @@ function App() {
           path='/news'
           component={() =>
             <News
+              setSelectedNewsData={setSelectedNewsData}
               user={user}
             />}
         />
