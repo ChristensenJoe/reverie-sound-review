@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Grid, Box, Container } from "@material-ui/core"
+import { Grid, Box, Container, Button } from "@material-ui/core"
 import NavBar from "./NavBar";
 import SearchBar from "material-ui-search-bar";
 
@@ -16,17 +16,40 @@ function Forums({ user }) {
     }
 
     useEffect(() => {
-        fetch("http://localhost:8000/posts")
-            .then(res => res.json())
-            .then(data => setPosts(data))
-    }, [])
+        let isMounted = true;
+        if (search.value === "") {
+            setPosts([]);
+        }
+        else {
+            fetch(`http://localhost:8000/posts?_page=${pageNumber}&q=${search.value.toLowerCase()}`)
+                .then(res => res.json())
+                .then(data => {
+                    if(isMounted) {
+                        if(data.length > 0) {
+                            setPosts(data)
+                        }
+                        else {
+                            setPosts([]);
+                            setPageNumber((pageNumber) => pageNumber-1);
+                            alert("You are on the last page");
+                        }
+                    }
+                })
+        }
+        return () => { isMounted = false }
+    }, [pageNumber, search])
 
-    const filteredPosts = posts.filter((post) => {
-        if(search.value==="") return false;
-        if(post.title.toLowerCase().includes(search.value.toLowerCase())) return true;
-        return false;
-    })
 
+    console.log(pageNumber);
+
+    function onNextClick() {
+        setPageNumber((pageNumber) => pageNumber+1)
+    }
+
+    function onPreviousClick() {
+        if(pageNumber > 1) setPageNumber((pageNumber) => pageNumber-1);
+        else alert("You are on the first page!")
+    }
 
     return (
         <div>
@@ -41,7 +64,7 @@ function Forums({ user }) {
                 value={search.value}
                 onCancelSearch={
                     () => {
-                        setSearch({value: ""});
+                        setSearch({ value: "" });
                     }
                 }
                 onRequestSearch={
@@ -62,7 +85,7 @@ function Forums({ user }) {
                 >
                     <Grid container spacing={3}>
                         {
-                            filteredPosts.map((post) => {
+                            posts.map((post) => {
                                 return (
                                     <Grid
                                         item
@@ -74,6 +97,39 @@ function Forums({ user }) {
                                 );
                             })
                         }
+
+                        <Grid item xs={12}>
+                            {posts.length > 0 &&
+                                <>
+                                    <Button
+                                        name="previous"
+                                        disableElevation
+                                        variant="contained"
+                                        color="primary"
+                                        style={{
+                                            float: "left",
+                                            margin: "10px"
+                                        }}
+                                        onClick={onPreviousClick}
+                                    >
+                                        Previous Page
+                                    </Button>
+                                    <Button
+                                        name="next"
+                                        disableElevation
+                                        variant="contained"
+                                        color="primary"
+                                        style={{
+                                            float: "right",
+                                            margin: "10px"
+                                        }}
+                                        onClick={onNextClick}
+                                    >
+                                        Next Page
+                                    </Button>
+                                </>}
+                        </Grid>
+
                     </Grid>
                 </Box>
             </Container>
