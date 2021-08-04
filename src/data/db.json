@@ -121,6 +121,30 @@
       "author": "Jim Henson",
       "title": "Muppets in Music",
       "content": "Post Contents"
+    },
+    {
+      "title": "Hello",
+      "content": "Hihihihihih",
+      "user": null,
+      "id": 14
+    },
+    {
+      "title": "Hello",
+      "content": "Hihihihihih",
+      "user": null,
+      "id": 15
+    },
+    {
+      "title": "Lolol",
+      "content": "Lolol",
+      "user": "test",
+      "id": 16
+    },
+    {
+      "title": "Lolol",
+      "content": "Lolol",
+      "author": "test",
+      "id": 17
     }
   ],
   "comments": [
@@ -131,7 +155,10 @@
       "content": "Post Contents",
       "likes": 12,
       "dislikes": 21,
-      "likedUsers": ["testUser", "user"],
+      "likedUsers": [
+        "testUser",
+        "user"
+      ],
       "dislikedUsers": []
     }
   ]

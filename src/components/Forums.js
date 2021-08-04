@@ -1,4 +1,4 @@
-import { useHistory } from "react-router-dom";
+import { useHistory, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Grid, Box, Container, Button } from "@material-ui/core"
 import NavBar from "./NavBar";
@@ -25,14 +25,14 @@ function Forums({ user }) {
             fetch(`http://localhost:8000/posts?_page=${pageNumber}&q=${search.value.toLowerCase()}`)
                 .then(res => res.json())
                 .then(data => {
-                    if(isMounted) {
-                        if(data.length > 0) {
+                    if (isMounted) {
+                        if (data.length > 0) {
                             setPosts(data)
                         }
                         else {
                             setPosts([]);
-                            if(pageNumber > 1) {
-                                setPageNumber((pageNumber) => pageNumber-1);
+                            if (pageNumber > 1) {
+                                setPageNumber((pageNumber) => pageNumber - 1);
                                 alert("You are on the last page");
                             }
                         }
@@ -45,17 +45,23 @@ function Forums({ user }) {
 
 
     function onNextClick() {
-        setPageNumber((pageNumber) => pageNumber+1)
+        setPageNumber((pageNumber) => pageNumber + 1)
     }
 
     function onPreviousClick() {
-        if(pageNumber > 1) setPageNumber((pageNumber) => pageNumber-1);
+        if (pageNumber > 1) setPageNumber((pageNumber) => pageNumber - 1);
         else alert("You are on the first page!")
     }
 
     return (
         <div>
             <NavBar />
+            <Button
+            component={NavLink}
+            to="/newforumpost"
+            style={{backgroundColor: "#fe7f2d", marginLeft:"50vw", color: "white", marginTop: "20px"}}
+          >Create Post
+          </Button>
             <SearchBar
                 style={{
                     marginTop: "20px",
@@ -76,7 +82,9 @@ function Forums({ user }) {
                         setPageNumber(1);
                     }
                 }
+                
             />
+           
             <Container>
                 <Box
                     marginTop="40px"
@@ -96,8 +104,8 @@ function Forums({ user }) {
                                         xs={4}
                                         key={post.id}
                                     >
-                                        <NewsCard data={post}/>
-                                        
+                                        <NewsCard data={post} />
+
                                     </Grid>
                                 );
                             })
@@ -108,7 +116,7 @@ function Forums({ user }) {
                                 <>
                                     <Button
                                         name="previous"
-                                        
+
                                         variant="contained"
                                         color="primary"
                                         style={{
@@ -121,7 +129,7 @@ function Forums({ user }) {
                                     </Button>
                                     <Button
                                         name="next"
-                                        
+
                                         variant="contained"
                                         color="primary"
                                         style={{

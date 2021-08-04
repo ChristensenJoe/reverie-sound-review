@@ -37,6 +37,14 @@ export default function ButtonAppBar() {
           </Typography>
           <Button
             component={NavLink}
+            to="/dashboard"
+            style={linkStyles}
+            color="inherit"
+            activeStyle={activeLinkStyles}
+          >Dashboard
+          </Button>
+          <Button
+            component={NavLink}
             to="/news"
             style={linkStyles}
             color="inherit"
