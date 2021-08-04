@@ -3,6 +3,7 @@ import { useState } from "react"
 import sha256 from "sha256";
 import Randomstring from 'randomstring';
 import {useHistory} from "react-router-dom";
+import '../styles/w3.css'
 
 
 function SignUpForm({ userData, updateUser }) {
@@ -75,6 +76,7 @@ function SignUpForm({ userData, updateUser }) {
                             required
                             value={formData.username}
                             onChange={onFormChange}
+                            className="w3-animate-zoom"
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -85,6 +87,7 @@ function SignUpForm({ userData, updateUser }) {
                             required
                             value={formData.password}
                             onChange={onFormChange}
+                            className="w3-animate-zoom"
                         />
                     </Grid>
                     <Grid item xs={12}>

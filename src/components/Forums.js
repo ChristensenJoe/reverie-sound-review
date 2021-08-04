@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Grid, Box, Container, Button } from "@material-ui/core"
 import NavBar from "./NavBar";
 import SearchBar from "material-ui-search-bar";
+import NewsCard from "./NewsCard"
 
 function Forums({ user }) {
     const [posts, setPosts] = useState([]);
@@ -89,11 +90,11 @@ function Forums({ user }) {
                                 return (
                                     <Grid
                                         item
-                                        xs={12}
+                                        xs={4}
                                         key={post.id}
                                     >
-                                        {/** Add Card */}
-                                        <h2>{post.title}</h2>
+                                        <NewsCard data={post}/>
+                                        
                                     </Grid>
                                 );
                             })

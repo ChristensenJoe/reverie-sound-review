@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Typography, Button, Divider } from '@material-ui/core';
-
+import rev from '../images/rev.png'
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -29,10 +29,11 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar style={{background: "black"}} position="static">
+      <AppBar style={{background: "black"}} position="static" disableElevation>
         <Toolbar>
+          <img src={rev} height="5%" width="5%" alt='logo'></img>
           <Typography variant="h6" className={classes.title}>
-            Reverie Sound Review
+            
           </Typography>
           <Button
             component={NavLink}

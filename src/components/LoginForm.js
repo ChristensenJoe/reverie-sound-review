@@ -2,6 +2,7 @@ import { Input, Button, Box, Grid } from "@material-ui/core"
 import { useState } from "react"
 import sha256 from "sha256";
 import {useHistory} from "react-router-dom"
+import '../styles/w3.css'
 
 function LoginForm({ userData, updateUser }) {
     const history = useHistory();
@@ -52,6 +53,8 @@ function LoginForm({ userData, updateUser }) {
                             required
                             value={formData.username}
                             onChange={onChangeForm}
+                            style={{background: "white"}}
+                            className="w3-animate-zoom"
                         />
                     </Grid>
                     <Grid item xs={12}>
@@ -62,10 +65,12 @@ function LoginForm({ userData, updateUser }) {
                             required
                             value={formData.password}
                             onChange={onChangeForm}
+                            style={{background: 'white'}}
+                            className="w3-animate-zoom"
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Box marginBottom="4vh">
+                        <Box marginBottom="4vh" className="w3-animate-zoom">
                         <Button type="submit" variant="contained" color="primary" className="form__custom-button">
                             Log in
                         </Button>

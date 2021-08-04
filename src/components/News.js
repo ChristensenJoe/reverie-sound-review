@@ -4,9 +4,10 @@ import NavBar from "./NavBar";
 import { Box, Grid, Button, ButtonGroup, Container } from "@material-ui/core"
 import SearchBar from "material-ui-search-bar";
 import NewsCard from "./NewsCard";
+import '../styles/w3.css'
 
 function News({ user }) {
-    const API_KEY = "f71564ed3c8b4f5587814c89dc49ff6a";
+    const API_KEY = "ed1ad5bc580d4542b0e4eccb9fc42a26";
     const [newsData, setNewsData] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
     const [search, setSearch] = useState({
@@ -78,7 +79,7 @@ function News({ user }) {
             />
             <Container>
                 <Box
-                    marginTop="40px"
+                    marginTop="20px"
                     margin="20px"
                     display="flex"
                     alignItems="top"
@@ -86,11 +87,11 @@ function News({ user }) {
                     overflow="hidden"
                     textAlign="center"
                 >
-                    <Grid container spacing={3}>
+                    <Grid container spacing={4}>
                         {
                             newsData.map((data) => {
                                 return (
-                                    <Grid item xs={12}
+                                    <Grid item xs={4}
                                         key={data.url}
                                     >
                                         <NewsCard data={data} />
@@ -108,7 +109,8 @@ function News({ user }) {
                                         color="primary"
                                         style={{
                                             float: "left",
-                                            margin: "10px"
+                                            margin: "10px",
+                                            background: "#ff7b00"
                                         }}
                                         onClick={onPreviousClick}
                                     >
@@ -121,7 +123,8 @@ function News({ user }) {
                                         color="primary"
                                         style={{
                                             float: "right",
-                                            margin: "10px"
+                                            margin: "10px",
+                                            background: "#ff7b00"
                                         }}
                                         onClick={onNextClick}
                                     >
