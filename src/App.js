@@ -57,6 +57,7 @@ function App() {
           path='/newforumpost'
           component={() =>
             <NewForumPost
+              setSelectedForumData={setSelectedForumData}
               user={user}
             />}
         />

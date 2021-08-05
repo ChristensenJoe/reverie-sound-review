@@ -1,10 +1,13 @@
 import { useHistory } from "react-router-dom";
+import {useState, useEffect} from "react";
 import NavBar from "./NavBar";
 import "../styles/w3.css"
 import { ThemeProvider, Button } from "@material-ui/core"
 import theme from "../styles/theme.js"
+import CommentContainer from "./CommentContainer"
 
 function NewsDetails({ user, data }) {
+    const [articleComments, setArticleComments] = useState([]);
     const history = useHistory();
 
     if (!user) {
@@ -13,8 +16,23 @@ function NewsDetails({ user, data }) {
 
     const { article } = data
 
-    console.log(article.content.split("[")[0])
+    useEffect(() => {
+        let isMounted = true;
+        fetch(`http://localhost:8000/articlecomments`)
+            .then(res => res.json())
+            .then(data => {
+                if (isMounted) {
+                    setArticleComments(data);
+                }
+            });
+        return () => { isMounted = false }
+    }, [])
 
+    const filteredComments = articleComments.filter((comment) => {
+        if(comment.postId === article.url) return true;
+        return false;
+    })
+    
     return (
         <>
             <ThemeProvider theme={theme}>
@@ -47,11 +65,13 @@ function NewsDetails({ user, data }) {
                     onClick={() => {window.location.href = article.url;}}
                 >Continue Reading
                 </Button>
+                <br></br>
+                <br></br>
+                <br></br>
+                <CommentContainer 
+                    comments={filteredComments}
+                />
             </ThemeProvider>
-
-
-
-
 
         </>
     );
