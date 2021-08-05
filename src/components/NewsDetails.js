@@ -69,7 +69,10 @@ function NewsDetails({ user, data }) {
                 <br></br>
                 <br></br>
                 <CommentContainer 
+                    postId={article.url}
+                    user={user}
                     comments={filteredComments}
+                    commentType={"articlecomments"}
                 />
             
 

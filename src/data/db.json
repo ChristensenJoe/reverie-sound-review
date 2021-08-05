@@ -199,6 +199,7 @@
       "id": 1,
       "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
       "author": "Jim Henson",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
       "content": "Post Contents",
       "likes": 12,
       "dislikes": 21,
@@ -212,6 +213,7 @@
       "id": 2,
       "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
       "author": "James May",
+      "profileImage": "",
       "content": "Other post",
       "likes": 12,
       "dislikes": 21,
@@ -225,6 +227,7 @@
       "id": 3,
       "postId": 13,
       "author": "Christoper",
+      "profileImage": "",
       "content": "Starter",
       "likes": 12,
       "dislikes": 21,
@@ -233,6 +236,53 @@
         "user"
       ],
       "dislikedUsers": []
+    },
+    {
+      "id": 4,
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "Christoper",
+      "profileImage": "",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "likes": 12,
+      "dislikes": 21,
+      "likedUsers": [
+        "testUser",
+        "user"
+      ],
+      "dislikedUsers": []
+    },
+    {
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "Something new",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 5
+    },
+    {
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "A new comment",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 6
+    },
+    {
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "A new comment",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 7
     }
   ],
   "postcomments": [
@@ -240,6 +290,7 @@
       "id": 1,
       "postId": 12,
       "author": "Jim Henson",
+      "profileImage": "https://iso.500px.com/wp-content/uploads/2015/03/business_cover.jpeg",
       "content": "Post Contents",
       "likes": 12,
       "dislikes": 21,
