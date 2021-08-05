@@ -73,9 +73,11 @@ function CommentContainer({ user, comments, postId, commentType}) {
                     )
                 })}
             </Grid>
+            
             <NewCommentForm 
                 handleFormSubmit={handleFormSubmit}
             />
+            <br />
         </Container>
     );
 }
