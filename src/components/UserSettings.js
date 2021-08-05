@@ -1,113 +1,126 @@
 import { useHistory } from "react-router-dom";
-import { useState } from "react";
-import { Grid, Box, OutlinedInput, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from "@material-ui/core";
+import { useState, useEffect } from "react";
+import { Container, Box, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from "@material-ui/core";
 import NavBar from "./NavBar";
 import sha256 from "sha256";
 import Randomstring from "randomstring";
 
 
 function UserSettings({ user, setUser }) {
+    const [usersAll, setUsersAll] = useState([])
     const [profileImgForm, setProfileImgForm] = useState("")
     const [usernameForm, setUsernameForm] = useState("")
     const [passwordForm, setPasswordForm] = useState("")
     const [open, setOpen] = useState(false);
+    const [userId, setUserId] = useState(null)
     const history = useHistory();
 
     if (!user) {
         history.push("/");
     }
 
-    function onUpdateProfileImage(e) {
-        e.preventDefault();
+    useEffect(() => {
+        let isMounted = true
+        fetch('http://localhost:8000/users/')
+        .then(res => res.json())
+        .then(setUsersAll)
+    }
+        
+    , [])
+
+    console.log(usersAll)
+
+    useEffect(() => {
+        let isMounted = true
         fetch(`http://localhost:8000/users?username=${user.username}`)
             .then(res => res.json())
             .then(data => {
-                fetch(`http://localhost:8000/users/${data[0].id}`, {
-                    method: "PATCH",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
+                if (isMounted) {
+                    setUserId(data[0].id)
+                }
+            })
+        return () => isMounted = false
+    }, [])
+
+    console.log(usernameForm)
+    console.log(passwordForm)
+    console.log(profileImgForm)
+
+    function onUpdateProfileImage(e) {
+        e.preventDefault();
+        fetch(`http://localhost:8000/users/${userId}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                profileImage: profileImgForm
+            })
+        })
+            .then(res => res.json())
+            .then(data => {
+                setUser((user) => {
+                    return {
+                        ...user,
                         profileImage: profileImgForm
-                    })
+                    }
                 })
-                    .then(res => res.json())
-                    .then(data => {
-                        setUser((user) => {
-                            return {
-                                ...user,
-                                profileImage: profileImgForm
-                            }
-                        })
-                        setProfileImgForm("")
-                    })
+                setProfileImgForm("")
             })
     }
 
     function onUpdateUsername(e) {
         e.preventDefault();
-        fetch(`http://localhost:8000/users?username=${user.username}`)
+        let isUsername = true
+        fetch(`http://localhost:8000/users/${userId}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                username: usernameForm
+            })
+        })
             .then(res => res.json())
             .then(data => {
-                fetch(`http://localhost:8000/users/${data[0].id}`, {
-                    method: "PATCH",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
+                setUser((user) => {
+                    return {
+                        ...user,
                         username: usernameForm
-                    })
+                    }
                 })
-                    .then(res => res.json())
-                    .then(data => {
-                        setUser((user) => {
-                            return {
-                                ...user,
-                                username: usernameForm
-                            }
-                        })
-                        setUsernameForm("")
-                    })
+                setUsernameForm("")
             })
     }
 
     function onUpdatePassword(e) {
         e.preventDefault();
-        fetch(`http://localhost:8000/users?username=${user.username}`)
-            .then(res => res.json())
-            .then(data => {
+        const saltPassword = Randomstring.generate();
+        const hashedPassword = sha256(saltPassword + passwordForm);
 
-                const saltPassword = Randomstring.generate();
-                const hashedPassword = sha256(saltPassword + passwordForm);
-
-                fetch(`http://localhost:8000/users/${data[0].id}`, {
-                    method: "PATCH",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        saltPassword: saltPassword,
-                        hashedPassword: hashedPassword
-                    })
-                })
-                    .then(res => res.json())
-                    .then(() => {
-                        setPasswordForm("");
-                    });
+        fetch(`http://localhost:8000/users/${userId}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                saltPassword: saltPassword,
+                hashedPassword: hashedPassword
             })
+        })
+            .then(res => res.json())
+            .then(() => {
+                setPasswordForm("");
+            });
     }
 
     function handleDeleteAccount() {
-        fetch(`http://localhost:8000/users?username=${user.username}`)
+        fetch(`http://localhost:8000/users/${userId}`, {
+            method: "DELETE"
+        })
             .then(res => res.json())
             .then(data => {
-                fetch(`http://localhost:8000/users/${data[0].id}`, {
-                    method: "DELETE"
-                })
-                    .then(res => res.json())
-                    .then(data => {
-                        history.push("/")
-                    })
+                history.push("/")
             })
     }
 
@@ -124,153 +137,97 @@ function UserSettings({ user, setUser }) {
             <NavBar
                 user={user}
             />
-            
-                <Box
-                    textAlign="Left"
-                    marginLeft="20px"
-                >
-                    <h1>User Settings</h1>
-                </Box>
-                <Grid container spacing={3}>
-                    <Grid item xs={12}>
-                        <Box
-                            textAlign="Left"
-                            marginLeft="20px"
-                        >
-                            <h3>Update Profile Image</h3>
-                        </Box>
-                        <form onSubmit={onUpdateProfileImage}>
-                            <Box
-                                marginBottom="10px"
-                                marginLeft="20px"
-                            >
-                                <OutlinedInput
-                                    label="profileImg"
-                                    id="profileImg"
-                                    placeholder="Profile Img URL"
-                                    value={profileImgForm}
-                                    onChange={(e) => { setProfileImgForm(e.target.value) }}
-                                    required
-                                    style={{
-                                        background: "white", width: "40%",
-                                        display: "inline-block",
-                                        textAlign: "left",
-                                        margin: "20px"
-                                    }}
-                                />
-                                <Button
-                                    type="submit"
-                                    variant="contained" color="primary" className="form__custom-button" style={{
-                                        verticalAlign: "middle",
-                                        display: "inline-block",
-                                        textAlign: "left",
-                                        margin: "20px"
-                                    }}>
-                                    Update Profile Image
-                                </Button>
-                            </Box>
-                        </form>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Box
-                            textAlign="Left"
-                            marginLeft="20px"
-                        >
-                            <h3>Update Username</h3>
-                        </Box>
-                        <form onSubmit={onUpdateUsername}>
-                            <Box
-                                marginBottom="10px"
-                                marginLeft="20px"
-                            >
-                                <OutlinedInput
-                                    label="username"
-                                    id="username"
-                                    placeholder="Username"
-                                    required
-                                    value={usernameForm}
-                                    onChange={(e) => { setUsernameForm(e.target.value) }}
-                                    style={{
-                                        background: "white", width: "40%",
-                                        display: "inline-block",
-                                        textAlign: "left",
-                                        margin: "20px"
-                                    }}
-                                />
-                                <Button
-                                    type="submit"
-                                    variant="contained" color="primary" className="form__custom-button" style={{
-                                        verticalAlign: "middle",
-                                        display: "inline-block",
-                                        textAlign: "left",
-                                        margin: "20px"
-                                    }}>
-                                    Update Username
-                                </Button>
-                            </Box>
-                        </form>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Box
-                            textAlign="Left"
-                            marginLeft="20px"
-                        >
-                            <h3>Update Password</h3>
-                        </Box>
-                        <form onSubmit={onUpdatePassword}>
-                            <Box
-                                marginBottom="10px"
-                                marginLeft="20px"
-                            >
-                                <OutlinedInput
-                                    label="password"
-                                    id="password"
-                                    placeholder="Password"
-                                    required
-                                    value={passwordForm}
-                                    onChange={(e) => { setPasswordForm(e.target.value) }}
-                                    style={{
-                                        background: "white", width: "40%",
-                                        display: "inline-block",
-                                        textAlign: "left",
-                                        margin: "20px"
-                                    }}
-                                />
-                                <Button
-                                    type="submit"
-                                    variant="contained" color="primary" className="form__custom-button" style={{
-                                        verticalAlign: "middle",
-                                        display: "inline-block",
-                                        textAlign: "left",
-                                        margin: "20px"
-                                    }}>
-                                    Update Password
-                                </Button>
-                            </Box>
-                        </form>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <Box
-                            textAlign="Left"
-                            marginLeft="20px"
-                        >
-                            <h3>Delete Account</h3>
-                        </Box>
-                        <Button
-                            onClick={handleClickOpen}
-                            type="submit"
-                            variant="contained" color="primary" className="form__custom-button" style={{
-                                verticalAlign: "middle",
-                                display: "inline-block",
-                                textAlign: "left",
-                                margin: "20px"
-                            }}>
-                            Delete Account
-                        </Button>
-                    </Grid>
-                    <Grid item xs={12}>
-                    </Grid>
-                </Grid>
+            <h1 style={{textAlign: "center"}}>User Settings</h1>
+            <Container>
+
+                <h3 style={{marginTop: "50px"}}>Update Profile Image</h3>
+                <form onSubmit={onUpdateProfileImage}>
+                    <TextField
+                        label="Profile Image URL"
+                        id="profileImg"
+                        value={profileImgForm}
+                        onChange={(e) => { setProfileImgForm(e.target.value) }}
+                        required
+                        style={{width: "80%"}}
+                        variant="outlined">
+                    </TextField>
+
+                    <Button
+                        type="submit"
+                        variant="contained" color="primary" className="form__custom-button" style={{
+                            verticalAlign: "middle",
+                            display: "inline-block",
+                            textAlign: "left",
+                            margin: "20px"
+                        }}>
+                        Update Profile Image
+                    </Button>
+                </form>
+
+                <h3>Update Username</h3>
+                <form onSubmit={onUpdateUsername}>
+                    <TextField
+                        style={{width: "80%"}}
+                        label="Username"
+                        id="username"
+                        required
+                        value={usernameForm}
+                        onChange={(e) => { setUsernameForm(e.target.value) }}
+                        variant="outlined">
+                    </TextField>
+
+                    <Button
+                        type="submit"
+                        variant="contained" color="primary" className="form__custom-button" style={{
+                            verticalAlign: "middle",
+                            display: "inline-block",
+                            textAlign: "left",
+                            margin: "20px"
+                        }}>
+                        Update Username
+                    </Button>
+                </form>
+
+                <h3>Update Password</h3>
+                <form onSubmit={onUpdatePassword}>
+                    <TextField
+                        label="password"
+                        id="password"
+                        placeholder="Password"
+                        required
+                        value={passwordForm}
+                        onChange={(e) => { setPasswordForm(e.target.value) }}
+                        style={{width: "80%"}}
+                        variant="outlined">
+                    </TextField>
+
+                    <Button
+                        type="submit"
+                        variant="contained" color="primary" className="form__custom-button" style={{
+                            verticalAlign: "middle",
+                            display: "inline-block",
+                            textAlign: "left",
+                            margin: "20px"
+                        }}>
+                        Update Password
+                    </Button>
+                </form>
+                <br></br>
+                <h3 style={{textAlign: "center"}}>Delete Account</h3>
+                <Button
+                    onClick={handleClickOpen}
+                    type="submit"
+                    variant="contained" color="primary" className="form__custom-button" style={{
+                        verticalAlign: "middle",
+                        display: "inline-block",
+                        textAlign: "center",
+                        margin: "20px",
+                        marginLeft: "44%"
+
+                    }}>
+                    Delete Account
+                </Button>
+
                 <Dialog
                     open={open}
                     onClose={handleClose}
@@ -323,7 +280,9 @@ function UserSettings({ user, setUser }) {
                         </Box>
                     </DialogActions>
                 </Dialog>
-            
+            </Container>
+
+
         </>
     )
 }

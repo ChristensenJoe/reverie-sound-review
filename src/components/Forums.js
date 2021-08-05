@@ -53,47 +53,52 @@ function Forums({ user, setSelectedForumData }) {
         else alert("You are on the first page!")
     }
 
-    function randomImage(){
+    function randomImage() {
 
         let randomNumber = Math.floor(Math.random() * 100)
-      
-        
-          return `https://picsum.photos/300/200?random=${randomNumber}`
-      
-      }
+
+
+        return `https://picsum.photos/300/200?random=${randomNumber}`
+
+    }
 
     return (
         <div>
-            <NavBar user={user}/>
-            <Button
-            component={NavLink}
-            to="/newforumpost"
-            style={{backgroundColor: "#ff5722", marginLeft:"50vw", color: "white", marginTop: "20px"}}
-          >Create Post
-          </Button>
-            <SearchBar
-                style={{
-                    marginTop: "20px",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                    width: "80%"
-                }}
-                value={search.value}
-                onCancelSearch={
-                    () => {
-                        setSearch({ value: "" });
-                        setPageNumber(1);
+            <NavBar user={user} />
+            <Container style={{
+                display: "flex",
+                flexDirection: "row",
+                marginTop: "50px"
+                    }}>
+                <SearchBar
+                    style={{
+                        marginLeft: "auto",
+                        marginRight: "auto",
+                        width: "80%",
+                    }}
+                    value={search.value}
+                    onCancelSearch={
+                        () => {
+                            setSearch({ value: "" });
+                            setPageNumber(1);
+                        }
                     }
-                }
-                onRequestSearch={
-                    (newValue) => {
-                        setSearch({ value: newValue })
-                        setPageNumber(1);
+                    onRequestSearch={
+                        (newValue) => {
+                            setSearch({ value: newValue })
+                            setPageNumber(1);
+                        }
                     }
-                }
-                
-            />
-           
+
+                />
+                <Button
+                    component={NavLink}
+                    to="/newforumpost"
+                    style={{ backgroundColor: "#ff5722", color: "white"}}
+                >Create Post
+                </Button>
+            </Container>
+
             <Container>
                 <Box
                     marginTop="40px"
@@ -114,11 +119,11 @@ function Forums({ user, setSelectedForumData }) {
                                         xs={4}
                                         key={post.id}
                                     >
-                                    <Link
-                                    to="/postdetails"
-                                    onClick={() => {setSelectedForumData({article: post, image: image})}}>
-                                        <NewsCard data={post} image={image} />
-                                    </Link>
+                                        <Link
+                                            to="/postdetails"
+                                            onClick={() => { setSelectedForumData({ article: post, image: image }) }}>
+                                            <NewsCard data={post} image={image} />
+                                        </Link>
 
                                     </Grid>
                                 );

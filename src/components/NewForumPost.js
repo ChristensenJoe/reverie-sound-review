@@ -92,10 +92,10 @@ function NewForumPost({ user, setSelectedForumData }) {
                 >
                     <Grid container spacing={4}>
                         <Grid item xs={12}>
-                            <OutlinedInput
-                                label="title"
+                            <TextField
+                                label="Title"
                                 id="title"
-                                placeholder="Title"
+                                variant="outlined"
                                 required
                                 value={formData.title}
                                 onChange={onChangeForm}
@@ -104,12 +104,12 @@ function NewForumPost({ user, setSelectedForumData }) {
                         </Grid>
                         <Grid item xs={12}>
                             <TextField
-                                label="content"
+                                label="Content"
                                 multiline
                                 rows="6"
                                 id="content"
-                                placeholder="Content"
                                 required
+                                variant="outlined"
                                 value={formData.content}
                                 onChange={onChangeForm}
                                 style={{ background: "white", width: "40%", marginLeft: "26vw" }}

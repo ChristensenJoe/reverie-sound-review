@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, AppBar, Toolbar, Typography, Button, Divider } from '@material-ui/core';
-import rev from '../images/rev.png'
+import navlogo2 from '../images/navlogo2.png'
 import userImage from "../images/profile-image-placeholder.png"
 
 
@@ -40,7 +40,7 @@ export default function ButtonAppBar({user}) {
     <div className={classes.root}>
       <AppBar style={{ background: "black" }} position="static" >
         <Toolbar>
-          
+          <img src={navlogo2} alt="logo" height="50px"></img>
           <Typography variant="body1" className={classes.title}>
               {/* <h1>Reverie Sound Review</h1> */}
           </Typography>
