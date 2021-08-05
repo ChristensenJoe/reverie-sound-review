@@ -1,27 +1,15 @@
 import { Grid, Box } from "@material-ui/core"
-import { Button, ButtonGroup, makeStyles } from '@material-ui/core'
+import { Button, ButtonGroup } from '@material-ui/core'
 import LoginForm from "./LoginForm"
 import { useState, useEffect } from "react"
 import SignUpForm from "./SignUpForm"
 import rev from "../images/rev.png"
 import '../styles/w3.css'
 
-const useStyles = makeStyles((theme) => ({
-    btn: {
-      '&:focus':  {
-        background: "#424242"
-      }
-    },
-    btn2: {
-      '&:focus': {
-          background: "#ff784e",
-      }
-    }
-  }));
 
 function Login({ updateUser }) {
 
-    const classes = useStyles();
+
 
     const [isShowingLogin, setIsShowingLogin] = useState(true)
     const [userData, setUserData] = useState([]);
@@ -88,14 +76,12 @@ function Login({ updateUser }) {
                                             variant="contained"
                                             color="primary"
                                         >
-                                            <Button
-                                               
+                                            <Button     
                                                 variant="contained"
                                                 color={isShowingLogin ? "primary" : "secondary"}
                                                 onClick={() => setIsShowingLogin(true)}>Login
                                             </Button>
                                             <Button
-                                                
                                                 variant="contained"
                                                 color={isShowingLogin ? "secondary" : "primary"}
                                                 onClick={() => setIsShowingLogin(false)}>Sign-Up

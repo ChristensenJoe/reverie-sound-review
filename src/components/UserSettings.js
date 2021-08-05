@@ -23,12 +23,17 @@ function UserSettings({ user, setUser }) {
         let isMounted = true
         fetch('http://localhost:8000/users/')
         .then(res => res.json())
-        .then(setUsersAll)
-    }
+        .then(data => {
+            if (isMounted) {
+            setUsersAll(data) 
+            }
+        })
         
+        return () => isMounted = false;
+    } 
     , [])
 
-    console.log(usersAll)
+   
 
     useEffect(() => {
         let isMounted = true
@@ -39,12 +44,12 @@ function UserSettings({ user, setUser }) {
                     setUserId(data[0].id)
                 }
             })
-        return () => isMounted = false
-    }, [])
+        return () => isMounted = false;
+    }, [user.username])
 
-    console.log(usernameForm)
-    console.log(passwordForm)
-    console.log(profileImgForm)
+    function handleLogOut() {
+        history.push('/')
+    }
 
     function onUpdateProfileImage(e) {
         e.preventDefault();
@@ -72,6 +77,14 @@ function UserSettings({ user, setUser }) {
     function onUpdateUsername(e) {
         e.preventDefault();
         let isUsername = true
+
+        usersAll.forEach(data => {
+            if (!(data.username === usernameForm)) {
+                isUsername = false;
+            }
+        })
+
+        if (isUsername) {
         fetch(`http://localhost:8000/users/${userId}`, {
             method: "PATCH",
             headers: {
@@ -91,6 +104,10 @@ function UserSettings({ user, setUser }) {
                 })
                 setUsernameForm("")
             })
+        }
+        else {
+            alert('Username taken!')
+        }
     }
 
     function onUpdatePassword(e) {
@@ -219,15 +236,32 @@ function UserSettings({ user, setUser }) {
                     type="submit"
                     variant="contained" color="primary" className="form__custom-button" style={{
                         verticalAlign: "middle",
-                        display: "inline-block",
+                        display: "flex",
                         textAlign: "center",
                         margin: "20px",
-                        marginLeft: "44%"
+                        marginLeft: "auto",
+                        marginRight: "auto"
 
                     }}>
                     Delete Account
                 </Button>
+                <br />
+                <h3 style={{textAlign: "center"}}>Logout</h3>
+                <Button
+                    onClick={handleLogOut}
+                    type="submit"
+                    variant="contained" color="primary" className="form__custom-button" style={{
+                        verticalAlign: "middle",
+                        display: "flex",
+                        textAlign: "center",
+                        margin: "20px",
+                        marginLeft: "auto",
+                        marginRight: "auto"
 
+                    }}>
+                    Logout
+                </Button>
+                
                 <Dialog
                     open={open}
                     onClose={handleClose}

@@ -16,7 +16,6 @@ const useStyles = makeStyles({
 
 function CommentContainer({ user, comments, postId, commentType}) {
     const [updatedComments, setUpdatedComments] = useState(comments)
-    console.log(updatedComments);
     const classes = useStyles();
 
     function handleFormSubmit(content) {

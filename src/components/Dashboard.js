@@ -1,6 +1,8 @@
 import { useHistory } from "react-router-dom";
 import NavBar from "./NavBar";
-import "../styles/w3.css"
+import "../styles/w3.css";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import { IconButton } from '@material-ui/core';
 
 function Dashboard({ user }) {
     const history = useHistory();
@@ -104,8 +106,8 @@ function Dashboard({ user }) {
                     textAlign: "justify",
                     padding: "50px 80px"
             }}>
-                <p style={{ textAlign: "center" }}>Joe Christensen Github: </p>
-                <p style={{ textAlign: "center" }}>Trevor Zylks Github: </p>
+                <p style={{ textAlign: "center" }}>Joe Christensen Github: <IconButton onClick={() => {window.location.href = "https://github.com/ChristensenJoe";}}><GitHubIcon color="primary" fontSize="small" /></IconButton></p>
+                <p style={{ textAlign: "center" }}>Trevor Zylks Github: <IconButton onClick={() => {window.location.href = "https://github.com/tzylks";}}><GitHubIcon color="primary" fontSize="small" /></IconButton></p>
             </div>
 
         </div>

@@ -1,5 +1,5 @@
 import { createTheme } from "@material-ui/core"
-import { deepOrange, deepPurple } from "@material-ui/core/colors";
+import { deepOrange } from "@material-ui/core/colors";
 
 
 const theme = createTheme({
@@ -12,7 +12,7 @@ const theme = createTheme({
         }
     },
     typography: {
-        fontFamily: "'STIX Two Text', 'serif'"
+        fontFamily: "'STIX Two Text', 'serif"
     }
 }
 )
