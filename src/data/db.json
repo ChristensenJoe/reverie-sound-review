@@ -149,9 +149,68 @@
       "content": "Hello\n",
       "author": "JohnRon",
       "id": 20
+    },
+    {
+      "title": "An Introduction to Our Dynamic Planet",
+      "content": "Things",
+      "author": "testUser",
+      "id": 21
+    },
+    {
+      "title": "An Introduction to Our Dynamic Planet",
+      "content": "Things",
+      "author": "testUser",
+      "id": 22
+    },
+    {
+      "title": "Music Review",
+      "content": "This is a music review.",
+      "author": "testUser",
+      "id": 23
     }
   ],
-  "comments": [
+  "articlecomments": [
+    {
+      "id": 1,
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "Jim Henson",
+      "content": "Post Contents",
+      "likes": 12,
+      "dislikes": 21,
+      "likedUsers": [
+        "testUser",
+        "user"
+      ],
+      "dislikedUsers": []
+    },
+    {
+      "id": 2,
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "James May",
+      "content": "Other post",
+      "likes": 12,
+      "dislikes": 21,
+      "likedUsers": [
+        "testUser",
+        "user"
+      ],
+      "dislikedUsers": []
+    },
+    {
+      "id": 3,
+      "postId": 13,
+      "author": "Christoper",
+      "content": "Starter",
+      "likes": 12,
+      "dislikes": 21,
+      "likedUsers": [
+        "testUser",
+        "user"
+      ],
+      "dislikedUsers": []
+    }
+  ],
+  "postcomments": [
     {
       "id": 1,
       "postId": 12,

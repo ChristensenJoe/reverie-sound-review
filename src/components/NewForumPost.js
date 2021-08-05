@@ -7,7 +7,7 @@ import { ThemeProvider } from "@material-ui/styles"
 
 
 
-function NewForumPost({user}) {
+function NewForumPost({ user, setSelectedForumData }) {
     const history = useHistory();
     const [formData, setFormData] = useState({
         title: "",
@@ -41,12 +41,22 @@ function NewForumPost({user}) {
 
         fetch('http://localhost:8000/posts', config)
         .then(res => res.json())
-        .then()
+        .then(data => {
+            setSelectedForumData({article: data, image: randomImage()});
+            history.push("/postdetails")
+        })
         
 
     }
 
+    function randomImage(){
 
+        let randomNumber = Math.floor(Math.random() * 100)
+      
+        
+          return `https://picsum.photos/300/200?random=${randomNumber}`
+      
+      }
 
     return (
         <>
