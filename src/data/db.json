@@ -34,6 +34,20 @@
       "saltPassword": "94nNKZjOkApUZeA1UHOX2W12gK5bxLfv",
       "profileImage": "",
       "id": 5
+    },
+    {
+      "username": "newUser",
+      "hashedPassword": "09eed7edfbfc886b386085977d1fa3d335cee737a909034a23a9efa4c4271f96",
+      "saltPassword": "EK8CtaRrBljuV28wMBF1jZL0b8PknUZC",
+      "profileImage": "",
+      "id": 6
+    },
+    {
+      "username": "Anotheruser",
+      "hashedPassword": "885652d12e71412f35a43c1dbb814e20e8226b1e6aa15543844decfea70bea29",
+      "saltPassword": "QcyqHk9U9RBDc7uVmMGhO3KVfAXXLKFo",
+      "profileImage": "",
+      "id": 7
     }
   ],
   "posts": [
@@ -201,13 +215,17 @@
       "author": "Jim Henson",
       "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
       "content": "Post Contents",
-      "likes": 12,
+      "likes": 18,
       "dislikes": 21,
       "likedUsers": [
-        "testUser",
-        "user"
+        "user",
+        "newUser",
+        "Anotheruser"
       ],
-      "dislikedUsers": []
+      "dislikedUsers": [
+        "testUser"
+      ],
+      "disliked": 21
     },
     {
       "id": 2,
@@ -215,13 +233,17 @@
       "author": "James May",
       "profileImage": "",
       "content": "Other post",
-      "likes": 12,
+      "likes": 14,
       "dislikes": 21,
       "likedUsers": [
-        "testUser",
-        "user"
+        "user",
+        "newUser",
+        "Anotheruser"
       ],
-      "dislikedUsers": []
+      "dislikedUsers": [
+        "testUser"
+      ],
+      "disliked": 22
     },
     {
       "id": 3,
@@ -246,10 +268,12 @@
       "likes": 12,
       "dislikes": 21,
       "likedUsers": [
-        "testUser",
         "user"
       ],
-      "dislikedUsers": []
+      "dislikedUsers": [
+        "testUser"
+      ],
+      "disliked": 22
     },
     {
       "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
@@ -257,10 +281,29 @@
       "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
       "content": "Something new",
       "likes": 0,
-      "dislikes": 0,
+      "dislikes": 1,
       "likedUsers": [],
-      "dislikedUsers": [],
-      "id": 5
+      "dislikedUsers": [
+        "testUser"
+      ],
+      "id": 5,
+      "disliked": 1
+    },
+    {
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "A new comment",
+      "likes": 1,
+      "dislikes": 1,
+      "likedUsers": [
+        "newUser"
+      ],
+      "dislikedUsers": [
+        "testUser"
+      ],
+      "id": 6,
+      "disliked": 1
     },
     {
       "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
@@ -268,21 +311,54 @@
       "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
       "content": "A new comment",
       "likes": 0,
-      "dislikes": 0,
+      "dislikes": 2,
       "likedUsers": [],
-      "dislikedUsers": [],
-      "id": 6
-    },
-    {
-      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
-      "author": "testUser",
-      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
-      "content": "A new comment",
-      "likes": 0,
-      "dislikes": 0,
-      "likedUsers": [],
-      "dislikedUsers": [],
+      "dislikedUsers": [
+        "testUser",
+        "newUser"
+      ],
       "id": 7
+    },
+    {
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "Test",
+      "likes": 2,
+      "dislikes": 0,
+      "likedUsers": [
+        "testUser",
+        "newUser"
+      ],
+      "dislikedUsers": [],
+      "id": 8
+    },
+    {
+      "postId": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "Another test",
+      "likes": 1,
+      "dislikes": 1,
+      "likedUsers": [
+        "testUser"
+      ],
+      "dislikedUsers": [
+        "newUser"
+      ],
+      "id": 9,
+      "disliked": 1
+    },
+    {
+      "postId": "https://amp.theguardian.com/music/2021/jul/08/chopin-complete-nocturnes-review-alain-planes",
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "This is a comment\n",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 10
     }
   ],
   "postcomments": [
@@ -299,6 +375,50 @@
         "user"
       ],
       "dislikedUsers": []
+    },
+    {
+      "postId": 14,
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "This is a comment",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 2
+    },
+    {
+      "postId": 14,
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "Comment\n",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 3
+    },
+    {
+      "postId": 15,
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "Other test",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 4
+    },
+    {
+      "postId": 1,
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "I LOve muppets\n",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 5
     }
   ]
 }

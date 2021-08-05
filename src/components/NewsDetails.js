@@ -7,7 +7,7 @@ import { Button } from "@material-ui/core"
 import CommentContainer from "./CommentContainer"
 
 function NewsDetails({ user, data }) {
-    const [articleComments, setArticleComments] = useState([]);
+    const [articleComments, setArticleComments] = useState(null);
     const history = useHistory();
 
     if (!user) {
@@ -15,7 +15,7 @@ function NewsDetails({ user, data }) {
     }
 
     const { article } = data
-
+    let filteredComments = [];
     useEffect(() => {
         let isMounted = true;
         fetch(`http://localhost:8000/articlecomments`)
@@ -27,11 +27,13 @@ function NewsDetails({ user, data }) {
             });
         return () => { isMounted = false }
     }, [])
-
-    const filteredComments = articleComments.filter((comment) => {
-        if(comment.postId === article.url) return true;
-        return false;
-    })
+    
+    if(articleComments) {
+        filteredComments = articleComments.filter((comment) => {
+            if(comment.postId === article.url) return true;
+            return false;
+        })
+    }
     
     return (
         <>
@@ -68,12 +70,15 @@ function NewsDetails({ user, data }) {
                 <br></br>
                 <br></br>
                 <br></br>
-                <CommentContainer 
+                {
+                    articleComments &&
+                    <CommentContainer 
                     postId={article.url}
                     user={user}
                     comments={filteredComments}
                     commentType={"articlecomments"}
                 />
+                }
             
 
         </>
