@@ -41,8 +41,8 @@ export default function ButtonAppBar({user}) {
       <AppBar style={{ background: "black" }} position="static" >
         <Toolbar>
           
-          <Typography variant="h6" className={classes.title}>
-              <h1>Reverie Sound Review</h1>
+          <Typography variant="body1" className={classes.title}>
+              {/* <h1>Reverie Sound Review</h1> */}
           </Typography>
           <Button
             color="inherit"
