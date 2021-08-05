@@ -61,6 +61,13 @@ function CommentContainer({ user, comments, postId, commentType}) {
                                 author={comment.author}
                                 content={comment.content}
                                 profileImage={comment.profileImage}
+                                lks={comment.likes}
+                                dlks={comment.dislikes}
+                                likedU={comment.likedUsers}
+                                dislikedU={comment.dislikedUsers}
+                                commentType={commentType}
+                                id={comment.id}
+                                user={user}
                             />
                         </Grid>
                     )
