@@ -4,19 +4,27 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, AppBar, Toolbar, Typography, Button, Divider } from '@material-ui/core';
 import rev from '../images/rev.png'
 import userImage from "../images/profile-image-placeholder.png"
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-  }
-}));
+
 
 export default function ButtonAppBar({user}) {
+  
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      flexGrow: 1,
+    },
+    menuButton: {
+      marginRight: theme.spacing(2),
+    },
+    title: {
+      flexGrow: 1,
+    },
+    btn: {
+      '&:hover':  {
+        background: "#ff784e"
+      }
+    }
+  }));
+
   const classes = useStyles();
 
   const linkStyles = {
@@ -32,9 +40,9 @@ export default function ButtonAppBar({user}) {
     <div className={classes.root}>
       <AppBar style={{ background: "black" }} position="static" >
         <Toolbar>
-          <img src={rev} height="5%" width="5%" alt='logo'></img>
+          
           <Typography variant="h6" className={classes.title}>
-
+              <h1>Reverie Sound Review</h1>
           </Typography>
           <Button
             color="inherit"
@@ -42,6 +50,7 @@ export default function ButtonAppBar({user}) {
             to="/dashboard"
             style={linkStyles}
             activeStyle={activeLinkStyles}
+            className={classes.btn}
           >Dashboard
           </Button>
           <Button
@@ -50,6 +59,7 @@ export default function ButtonAppBar({user}) {
             style={linkStyles}
             color="inherit"
             activeStyle={activeLinkStyles}
+            className={classes.btn}
           >News
           </Button>
           <Button
@@ -58,6 +68,7 @@ export default function ButtonAppBar({user}) {
             style={linkStyles}
             color="inherit"
             activeStyle={activeLinkStyles}
+            className={classes.btn}
           >Forums
           </Button>
           <Divider orientation="vertical" flexItem />
@@ -67,6 +78,7 @@ export default function ButtonAppBar({user}) {
             to="/settings"
             style={linkStyles}
             activeStyle={activeLinkStyles}
+            className={classes.btn}
           >
             <Box
               border={1}

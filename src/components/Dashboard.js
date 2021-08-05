@@ -12,7 +12,6 @@ function Dashboard({ user }) {
     return (
 
         <div
-            className="w3-animate-zoom"
             style={{
                 background: "url('https://cdn.pixabay.com/photo/2020/05/11/09/03/conductor-5157153_1280.jpg')",
                 minHeight: "100%",
@@ -39,7 +38,7 @@ function Dashboard({ user }) {
                         fontSize: "25px",
                         letterSpacing: "10px"
                 }}>
-                    HELLO {user.username.toUpperCase()}
+                    HELLO {(typeof user === "object") && user.username.toUpperCase()}
                 </span>
 
             </div>

@@ -1,7 +1,7 @@
 import { useHistory } from "react-router-dom";
 import NavBar from "./NavBar";
 import "../styles/w3.css"
-import {  Button } from "@material-ui/core"
+
 
 
 function ForumPostDetails ({data, user}) {
@@ -11,7 +11,6 @@ function ForumPostDetails ({data, user}) {
         history.push("/")
     }
 
-    console.log(data)
     
     return (
        <>
@@ -34,7 +33,7 @@ function ForumPostDetails ({data, user}) {
                 <div className="w3-container" id="about">
                     <h5 className="w3-center w3-padding-64"><span className="w3-tag w3-wide w3-orange">SYNOPSIS</span></h5>
                 </div>
-                <div style={{ marginRight: "100px", marginLeft: "100px" }}>{data.article.content}</div>
+                <div style={{textAlign: "center"}}>{data.article.content}</div>
                 <br></br>
                 <br></br>
       </>   
