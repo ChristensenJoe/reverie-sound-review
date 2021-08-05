@@ -16,7 +16,7 @@ const useStyles = makeStyles({
 
 function CommentContainer({ user, comments, postId, commentType}) {
     const [updatedComments, setUpdatedComments] = useState(comments)
-
+    console.log(updatedComments);
     const classes = useStyles();
 
     function handleFormSubmit(content) {
@@ -30,7 +30,6 @@ function CommentContainer({ user, comments, postId, commentType}) {
             likedUsers: [],
             dislikedUsers: []
         }
-
         fetch(`http://localhost:8000/${commentType}`, {
             method: "POST",
             headers: {
@@ -43,7 +42,7 @@ function CommentContainer({ user, comments, postId, commentType}) {
 
 
     }
-
+   
     return (
         <Container>
             <Grid
