@@ -25,7 +25,7 @@ export default function ButtonAppBar({user}) {
     paddingLeft: "10px"
   }
   const activeLinkStyles = {
-    backgroundColor: "#fe7f2d"
+    backgroundColor: "#ff5722"
   }
 
   return (
@@ -37,10 +37,10 @@ export default function ButtonAppBar({user}) {
 
           </Typography>
           <Button
+            color="inherit"
             component={NavLink}
             to="/dashboard"
             style={linkStyles}
-            color="inherit"
             activeStyle={activeLinkStyles}
           >Dashboard
           </Button>

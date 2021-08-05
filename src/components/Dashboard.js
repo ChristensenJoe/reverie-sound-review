@@ -28,13 +28,13 @@ function Dashboard({ user }) {
                     top: "50%",
                     width: "100%",
                     textAlign: "center",
-                    color: "#fe7f2d"
+                    color: "#ff5722"
             }}>
                 
                 <span
                     style={{
                         backgroundColor: "black",
-                        color: "#fe7f2d",
+                        color: "#ff5722",
                         padding: "18px",
                         fontSize: "25px",
                         letterSpacing: "10px"
@@ -48,7 +48,7 @@ function Dashboard({ user }) {
 
             <div
                 style={{
-                    color: "#fe7f2d",
+                    color: "#ff5722",
                     marginTop: "50%",
                     height: "10%",
                     backgroundColor: "black",
@@ -73,7 +73,7 @@ function Dashboard({ user }) {
 
             <div
                 style={{
-                    color: "#fe7f2d",
+                    color: "#ff5722",
                     marginTop: "0%",
                     height: "10%",
                     backgroundColor: "black",
@@ -98,7 +98,7 @@ function Dashboard({ user }) {
 
             <div
                 style={{
-                    color: "#fe7f2d",
+                    color: "#ff5722",
                     marginTop: "0%",
                     height: "5%",
                     backgroundColor: "black",

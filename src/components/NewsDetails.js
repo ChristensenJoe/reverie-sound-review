@@ -2,8 +2,8 @@ import { useHistory } from "react-router-dom";
 import {useState, useEffect} from "react";
 import NavBar from "./NavBar";
 import "../styles/w3.css"
-import { ThemeProvider, Button } from "@material-ui/core"
-import theme from "../styles/theme.js"
+import { Button } from "@material-ui/core"
+
 import CommentContainer from "./CommentContainer"
 
 function NewsDetails({ user, data }) {
@@ -35,7 +35,7 @@ function NewsDetails({ user, data }) {
     
     return (
         <>
-            <ThemeProvider theme={theme}>
+            
                 <NavBar user={user}/>
                 <header className="bgimg w3-display-container w3-grayscale-min" id="home" >
                     <div>
@@ -71,7 +71,7 @@ function NewsDetails({ user, data }) {
                 <CommentContainer 
                     comments={filteredComments}
                 />
-            </ThemeProvider>
+            
 
         </>
     );

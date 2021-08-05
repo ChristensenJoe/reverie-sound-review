@@ -1,17 +1,18 @@
 import { createTheme } from "@material-ui/core"
-
+import { deepOrange, deepPurple } from "@material-ui/core/colors";
 
 
 const theme = createTheme({
     palette: {
-        primary: {
-            main: '#fe7f2d'
-        },
-
+        primary: deepOrange,
+    
         secondary: {
             main: '#000000',
-            contrastText: "#ffffff"
+
         }
+    },
+    typography: {
+        fontFamily: "'STIX Two Text', 'serif'"
     }
 }
 )

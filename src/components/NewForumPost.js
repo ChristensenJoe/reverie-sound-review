@@ -1,9 +1,8 @@
 import {useHistory} from "react-router-dom";
 import NavBar from "./NavBar"
-import { OutlinedInput, Grid, Button } from "@material-ui/core"
+import { OutlinedInput, Grid, Button, TextField } from "@material-ui/core"
 import { useState, } from "react"
-import theme from "../styles/theme.js"
-import { ThemeProvider } from "@material-ui/styles"
+
 
 
 
@@ -63,7 +62,7 @@ function NewForumPost({ user, setSelectedForumData }) {
             <NavBar 
                 user={user}
             />
-            <ThemeProvider theme={theme}>
+            
 
                 <div
                     style={{
@@ -104,7 +103,7 @@ function NewForumPost({ user, setSelectedForumData }) {
                             />
                         </Grid>
                         <Grid item xs={12}>
-                            <OutlinedInput
+                            <TextField
                                 label="content"
                                 multiline
                                 rows="6"
@@ -124,7 +123,7 @@ function NewForumPost({ user, setSelectedForumData }) {
 
                     </Grid>
                 </form>
-            </ThemeProvider>
+            
         </>
 
     )

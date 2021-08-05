@@ -1,8 +1,6 @@
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import { Grid, Box, OutlinedInput, Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from "@material-ui/core";
-import theme from "../styles/theme.js"
-import { ThemeProvider } from "@material-ui/styles"
 import NavBar from "./NavBar";
 import sha256 from "sha256";
 import Randomstring from "randomstring";
@@ -126,7 +124,7 @@ function UserSettings({ user, setUser }) {
             <NavBar
                 user={user}
             />
-            <ThemeProvider theme={theme}>
+            
                 <Box
                     textAlign="Left"
                     marginLeft="20px"
@@ -325,7 +323,7 @@ function UserSettings({ user, setUser }) {
                         </Box>
                     </DialogActions>
                 </Dialog>
-            </ThemeProvider>
+            
         </>
     )
 }

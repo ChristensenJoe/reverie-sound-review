@@ -4,8 +4,6 @@ import LoginForm from "./LoginForm"
 import { useState, useEffect } from "react"
 import SignUpForm from "./SignUpForm"
 import rev from "../images/rev.png"
-import { ThemeProvider } from "@material-ui/core"
-import theme from "../styles/theme"
 import '../styles/w3.css'
 
 
@@ -29,7 +27,7 @@ function Login({ updateUser }) {
 
     return (
 
-        <ThemeProvider theme={theme}>
+        
             <div
                 style={{
                     background: "white"
@@ -116,7 +114,7 @@ function Login({ updateUser }) {
                     </Grid>
                 </Grid>
             </div>
-        </ThemeProvider>
+        
     );
 }
 

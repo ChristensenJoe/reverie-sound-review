@@ -27,6 +27,13 @@
       "saltPassword": "rL44sq4WZkcrDeGZaggAL4ifp7n3OOvH",
       "profileImage": "",
       "id": 4
+    },
+    {
+      "username": "test",
+      "hashedPassword": "5add826ff6673ff193bfcbd592adbfc4b29a33163a531ae80d30da6da3e3f414",
+      "saltPassword": "94nNKZjOkApUZeA1UHOX2W12gK5bxLfv",
+      "profileImage": "",
+      "id": 5
     }
   ],
   "posts": [
@@ -167,6 +174,24 @@
       "content": "This is a music review.",
       "author": "testUser",
       "id": 23
+    },
+    {
+      "title": "Joe",
+      "content": "Hello",
+      "author": "test",
+      "id": 24
+    },
+    {
+      "title": "Hi",
+      "content": "hi",
+      "author": "test",
+      "id": 25
+    },
+    {
+      "title": "Hi",
+      "content": "hi",
+      "author": "test",
+      "id": 26
     }
   ],
   "articlecomments": [

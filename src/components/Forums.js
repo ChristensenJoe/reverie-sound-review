@@ -68,7 +68,7 @@ function Forums({ user, setSelectedForumData }) {
             <Button
             component={NavLink}
             to="/newforumpost"
-            style={{backgroundColor: "#fe7f2d", marginLeft:"50vw", color: "white", marginTop: "20px"}}
+            style={{backgroundColor: "#ff5722", marginLeft:"50vw", color: "white", marginTop: "20px"}}
           >Create Post
           </Button>
             <SearchBar

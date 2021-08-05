@@ -8,6 +8,8 @@ import NewsDetails from "./components/NewsDetails.js";
 import UserSettings from "./components/UserSettings.js";
 import NewForumPost from "./components/NewForumPost.js";
 import ForumPostDetails from "./components/ForumPostDetails"
+import {ThemeProvider} from "@material-ui/core"
+import theme from "./styles/theme"
 
 function App() {
   const [user, setUser] = useState(false);
@@ -19,6 +21,7 @@ function App() {
   }
 
   return (
+   <ThemeProvider theme={theme}>
     <div className="App">
       <Switch>
       <Route
@@ -86,6 +89,7 @@ function App() {
         />
       </Switch>
     </div>
+  </ThemeProvider>
   );
 }
 
