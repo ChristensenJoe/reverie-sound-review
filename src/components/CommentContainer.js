@@ -29,7 +29,7 @@ function CommentContainer({ user, comments, postId, commentType}) {
             likedUsers: [],
             dislikedUsers: []
         }
-        fetch(`http://localhost:8000/${commentType}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/${commentType}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

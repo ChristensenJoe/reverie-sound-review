@@ -16,7 +16,7 @@ function Login({ updateUser }) {
 
     useEffect(() => {
         let isMounted = true;
-        fetch("http://localhost:8000/users")
+        fetch(`${process.env.REACT_APP_API_URL}/users`)
             .then(res => res.json())
             .then(data => {
                 if (isMounted) {

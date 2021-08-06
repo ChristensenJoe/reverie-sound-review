@@ -38,7 +38,7 @@ function NewForumPost({ user, setSelectedForumData }) {
             body: JSON.stringify(newPost)
         }
 
-        fetch('http://localhost:8000/posts', config)
+        fetch(`${process.env.REACT_APP_API_URL}/posts`, config)
         .then(res => res.json())
         .then(data => {
             setSelectedForumData({article: data, image: randomImage()});

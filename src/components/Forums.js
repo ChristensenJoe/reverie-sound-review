@@ -22,7 +22,7 @@ function Forums({ user, setSelectedForumData }) {
             setPosts([]);
         }
         else {
-            fetch(`http://localhost:8000/posts?_page=${pageNumber}&q=${search.value.toLowerCase()}`)
+            fetch(`${process.env.REACT_APP_API_URL}/posts?_page=${pageNumber}&q=${search.value.toLowerCase()}`)
                 .then(res => res.json())
                 .then(data => {
                     if (isMounted) {

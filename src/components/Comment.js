@@ -58,7 +58,7 @@ function Comment({ author, content, profileImage, lks, dlks, likedU, dislikedU, 
 
         if (!isLiked) {
             if (isDisliked) {
-                fetch(`http://localhost:8000/${commentType}/${id}`, {
+                fetch(`${process.env.REACT_APP_API_URL}/${commentType}/${id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json"

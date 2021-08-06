@@ -21,7 +21,7 @@ function UserSettings({ user, setUser }) {
 
     useEffect(() => {
         let isMounted = true
-        fetch('http://localhost:8000/users/')
+        fetch(`${process.env.REACT_APP_API_URL}/users/`)
         .then(res => res.json())
         .then(data => {
             if (isMounted) {
@@ -37,7 +37,7 @@ function UserSettings({ user, setUser }) {
 
     useEffect(() => {
         let isMounted = true
-        fetch(`http://localhost:8000/users?username=${user.username}`)
+        fetch(`${process.env.REACT_APP_API_URL}/users?username=${user.username}`)
             .then(res => res.json())
             .then(data => {
                 if (isMounted) {
@@ -53,7 +53,7 @@ function UserSettings({ user, setUser }) {
 
     function onUpdateProfileImage(e) {
         e.preventDefault();
-        fetch(`http://localhost:8000/users/${userId}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/users/${userId}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -85,7 +85,7 @@ function UserSettings({ user, setUser }) {
         })
 
         if (isUsername) {
-        fetch(`http://localhost:8000/users/${userId}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/users/${userId}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -115,7 +115,7 @@ function UserSettings({ user, setUser }) {
         const saltPassword = Randomstring.generate();
         const hashedPassword = sha256(saltPassword + passwordForm);
 
-        fetch(`http://localhost:8000/users/${userId}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/users/${userId}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"
@@ -132,7 +132,7 @@ function UserSettings({ user, setUser }) {
     }
 
     function handleDeleteAccount() {
-        fetch(`http://localhost:8000/users/${userId}`, {
+        fetch(`${process.env.REACT_APP_API_URL}/users/${userId}`, {
             method: "DELETE"
         })
             .then(res => res.json())
