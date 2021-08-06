@@ -81,7 +81,7 @@ function Comment({ author, content, profileImage, lks, dlks, likedU, dislikedU, 
                     })
             }
             else {
-                fetch(`http://localhost:8000/${commentType}/${id}`, {
+                fetch(`${process.env.REACT_APP_API_URL}/${commentType}/${id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json"
@@ -100,7 +100,7 @@ function Comment({ author, content, profileImage, lks, dlks, likedU, dislikedU, 
             }
         }
         else {
-            fetch(`http://localhost:8000/${commentType}/${id}`, {
+            fetch(`${process.env.REACT_APP_API_URL}/${commentType}/${id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json"
@@ -131,7 +131,7 @@ function Comment({ author, content, profileImage, lks, dlks, likedU, dislikedU, 
 
         if (!isDisliked) {
             if (isLiked) {
-                fetch(`http://localhost:8000/${commentType}/${id}`, {
+                fetch(`${process.env.REACT_APP_API_URL}/${commentType}/${id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json"
@@ -154,7 +154,7 @@ function Comment({ author, content, profileImage, lks, dlks, likedU, dislikedU, 
                     })
             }
             else {
-                fetch(`http://localhost:8000/${commentType}/${id}`, {
+                fetch(`${process.env.REACT_APP_API_URL}/${commentType}/${id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json"
@@ -173,7 +173,7 @@ function Comment({ author, content, profileImage, lks, dlks, likedU, dislikedU, 
             }
         }
         else {
-            fetch(`http://localhost:8000/${commentType}/${id}`, {
+            fetch(`${process.env.REACT_APP_API_URL}/${commentType}/${id}`, {
                     method: "PATCH",
                     headers: {
                         "Content-Type": "application/json"
