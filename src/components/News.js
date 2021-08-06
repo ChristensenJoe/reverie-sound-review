@@ -7,7 +7,7 @@ import NewsCard from "./NewsCard";
 import '../styles/w3.css'
 
 function News({ user, setSelectedNewsData }) {
-    const API_KEY = "fb75d9813cb84124a7fbaa9c49336426";
+    const API_KEY = "ed1ad5bc580d4542b0e4eccb9fc42a26";
     const [newsData, setNewsData] = useState([]);
     const [pageNumber, setPageNumber] = useState(1);
     const [search, setSearch] = useState({
