@@ -206,6 +206,12 @@
       "content": "hi",
       "author": "test",
       "id": 26
+    },
+    {
+      "title": "An Example Post",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et velit in magna consectetur dapibus non non orci. Maecenas sit amet tortor eget dui faucibus aliquet quis vitae nunc. Praesent gravida semper massa. Cras vel justo quam. Praesent ac lacinia ligula. Suspendisse id velit quis purus sollicitudin vehicula ut ut nulla. Cras fermentum non ligula at hendrerit. Aliquam congue turpis vitae lacus congue laoreet. Duis volutpat, purus at tincidunt scelerisque, elit massa condimentum mauris, id fringilla mauris lacus ac leo. Maecenas eu arcu ligula. Suspendisse sit amet luctus enim, sit amet maximus erat.\n\nPraesent eu ex vitae leo viverra malesuada. Nam laoreet massa imperdiet vulputate ullamcorper. Donec ut lorem urna. Aliquam non interdum nunc. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sed ultrices ex. Curabitur sollicitudin est vitae ligula bibendum sodales. Ut at cursus est, at imperdiet nulla. Etiam molestie, diam at lobortis scelerisque, mauris enim pharetra est, et dignissim sapien justo ac mi. Morbi consequat eleifend tellus, nec molestie velit varius a.\n\nCras a nisl eu odio accumsan volutpat at eget augue. Donec id lobortis turpis. Suspendisse quis est rutrum, pretium quam at, faucibus risus. Etiam at felis quam. Sed justo risus, varius non aliquam et, mattis nec tortor. Morbi quis augue pulvinar, luctus sem quis, tincidunt metus. Sed venenatis, turpis in dignissim congue, nisi nisi iaculis nunc, quis vulputate ex felis quis velit. In ac pulvinar tortor, quis laoreet leo.\n\nAliquam erat volutpat. Morbi pulvinar mi ex, in aliquam sapien molestie non. Curabitur id eleifend ex. Fusce auctor non justo ut tristique. Aliquam malesuada mattis libero et commodo. Etiam nisl ante, fermentum a pellentesque sed, consequat feugiat leo. Donec et malesuada ex, ut placerat nisl.\n\nOrci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean ac eros luctus, luctus purus aliquam, pellentesque dui. Mauris sed vehicula arcu, quis euismod risus. Morbi semper sapien sit amet lorem mollis, commodo condimentum est porttitor. Aenean ut aliquam lacus, eu efficitur nunc. Mauris sit amet congue mi, ac euismod elit. Vestibulum porta sem nibh. Ut vestibulum et erat ac laoreet. Duis vel tortor eget metus condimentum bibendum at ac elit. Phasellus eget tempor lorem, eu vestibulum tellus. Ut in sollicitudin mauris. Quisque eget congue tellus, at convallis orci. Donec pharetra, felis id luctus venenatis, mi nibh viverra velit, in viverra quam lacus ac risus. Maecenas mauris dolor, varius at massa id, iaculis pharetra diam. Donec finibus porta purus, vitae tempor nibh molestie a. Nullam ultricies lacinia tortor non vehicula.",
+      "author": "testUser",
+      "id": 27
     }
   ],
   "articles": [
@@ -1111,6 +1117,17 @@
       "likedUsers": [],
       "dislikedUsers": [],
       "id": 5
+    },
+    {
+      "postId": 27,
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "Test comment",
+      "likes": 0,
+      "dislikes": 0,
+      "likedUsers": [],
+      "dislikedUsers": [],
+      "id": 6
     }
   ]
 }

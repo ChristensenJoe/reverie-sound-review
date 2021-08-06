@@ -1,6 +1,6 @@
 import {useHistory} from "react-router-dom";
 import NavBar from "./NavBar"
-import { Grid, Button, TextField } from "@material-ui/core"
+import { Grid, Button, TextField, Container } from "@material-ui/core"
 import { useState, } from "react"
 
 
@@ -80,49 +80,68 @@ function NewForumPost({ user, setSelectedForumData }) {
                             padding: "18px",
                             fontSize: "25px",
                             letterSpacing: "10px",
-                            marginRight: "7vw"
+                            marginLeft: "auto",
+                            marginRight: "auto"
                         }}
                     >
                         Add Post</span>
                 </div>
 
-
+                <Container>
                 <form className="form"
                     onSubmit={onSubmitForm}
                 >
                     <Grid container spacing={4}>
-                        <Grid item xs={12}>
+                        <Grid item xs={12}
+                        style={{ 
+                            background: "white", 
+                            textAlign: "center", 
+                            marginLeft: "auto", 
+                            marginRight: "auto", 
+                            marginTop: "10vh" 
+                        }}
+                        >
                             <TextField
+                                fullWidth
                                 label="Title"
                                 id="title"
                                 variant="outlined"
                                 required
                                 value={formData.title}
                                 onChange={onChangeForm}
-                                style={{ background: "white", width: "40%", marginLeft: "26vw", marginTop: "10vh" }}
                             />
                         </Grid>
-                        <Grid item xs={12}>
+                        <Grid item xs={12}
+                        style={{ 
+                            background: "white", 
+                            textAlign: "center", 
+                            marginLeft: "auto", 
+                            marginRight: "auto"
+                        }}
+                        >
                             <TextField
+                                fullWidth
                                 label="Content"
                                 multiline
-                                rows="6"
+                                rows="20"
                                 id="content"
                                 required
                                 variant="outlined"
                                 value={formData.content}
                                 onChange={onChangeForm}
-                                style={{ background: "white", width: "40%", marginLeft: "26vw" }}
+                                
                             />
 
                         </Grid>
 
-                        <Button type="submit" variant="contained" color="primary" className="form__custom-button" style={{ marginLeft: "43vw" }}>
+                        <Button type="submit" variant="contained" color="primary" className="form__custom-button" style={{ marginLeft: "auto",
+                    marginRight: "auto" }}>
                             Submit Post
                         </Button>
 
                     </Grid>
                 </form>
+                </Container>
             
         </>
 
