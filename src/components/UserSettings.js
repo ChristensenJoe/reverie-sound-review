@@ -84,7 +84,6 @@ function UserSettings({ user, setUser }) {
             }
         })
 
-        console.log(isUsername);
 
         if (isUsername) {
         fetch(`${process.env.REACT_APP_API_URL}/users/${userId}`, {
