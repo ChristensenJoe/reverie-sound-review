@@ -1,4 +1,4 @@
-import { useHistory, Link} from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import { Box, Grid, Button, Container } from "@material-ui/core"
@@ -21,21 +21,25 @@ function News({ user, setSelectedNewsData }) {
 
     useEffect(() => {
         let isMounted = true;
-        fetch(`https://newsapi.org/v2/everything?q=(classical%20AND%20${search.value.toLowerCase()})&apiKey=${API_KEY}&pageSize=10&page=${pageNumber}`)
-            .then(res => res.json())
-            .then(data => {
-                if (isMounted) {
-                    if ((data.status === "ok") && (data.articles.length > 0)) {
-                        setNewsData(data.articles)
-                    }
-                    else {
-                        if (pageNumber !== 1) {
-                            setPageNumber((pageNumber) => pageNumber - 1)
-                            alert("You are on the last page")
+        if (search.value !== "") {
+            /**fetch(`https://newsapi.org/v2/everything?q=(classical%20AND%20${search.value.toLowerCase()})&apiKey=${API_KEY}&pageSize=10&page=${pageNumber}`) */
+            fetch(`${process.env.REACT_APP_API_URL}/articles/?q=${search.value.toLowerCase()}&_page=${pageNumber}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (isMounted) {
+                        if (data.length > 0) {
+                            setNewsData(data)
+                            console.log(newsData);
+                        }
+                        else {
+                            if (pageNumber !== 1) {
+                                setPageNumber((pageNumber) => pageNumber - 1)
+                                alert("You are on the last page")
+                            }
                         }
                     }
-                }
-            });
+                });
+        }
         return () => { isMounted = false }
     }, [search, pageNumber])
 
@@ -51,15 +55,15 @@ function News({ user, setSelectedNewsData }) {
             alert("You are on the first page");
         }
     }
-    
-    function randomImage(){
+
+    function randomImage() {
 
         let randomNumber = Math.floor(Math.random() * 100)
-      
-        
-          return `https://picsum.photos/300/200?random=${randomNumber}`
-      
-      }
+
+
+        return `https://picsum.photos/300/200?random=${randomNumber}`
+
+    }
 
     return (
         <div>
@@ -104,11 +108,11 @@ function News({ user, setSelectedNewsData }) {
                                     <Grid item xs={4}
                                         key={data.url}
                                     >
-                                        <Link 
-                                        to="/newsdetails"
-                                        onClick={() => {setSelectedNewsData({article: data, image: image})}}
+                                        <Link
+                                            to="/newsdetails"
+                                            onClick={() => { setSelectedNewsData({ article: data, image: image }) }}
                                         >
-                                        <NewsCard data={data} image={image} />
+                                            <NewsCard data={data} image={image} />
                                         </Link>
                                     </Grid>
                                 )
@@ -119,7 +123,7 @@ function News({ user, setSelectedNewsData }) {
                                 <>
                                     <Button
                                         name="previous"
-                                        
+
                                         variant="contained"
                                         color="primary"
                                         style={{
@@ -133,7 +137,7 @@ function News({ user, setSelectedNewsData }) {
                                     </Button>
                                     <Button
                                         name="next"
-                                        
+
                                         variant="contained"
                                         color="primary"
                                         style={{

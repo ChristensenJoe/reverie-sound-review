@@ -208,6 +208,684 @@
       "id": 26
     }
   ],
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Arifa Akbar",
+      "title": "Wayne McGregor: ‘Dancers are believing their voices can be heard, and I love that’",
+      "description": "Royal Ballet choreographer Wayne McGregor had no access to elite ballet schools growing up. But he did have John Travolta and disco to spark a lifelong obsession. Now he wants to make dancers of us allLong before Wayne McGregor became a star choreographer fam…",
+      "url": "https://amp.theguardian.com/stage/2021/jul/10/wayne-mcgregor-star-choreographer-is-on-a-mission-to-make-dancers-of-us-all",
+      "urlToImage": "https://i.guim.co.uk/img/media/b71d0fb1d96494e86926c840bdbc31f784a8a5cf/0_222_6863_4118/master/6863.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=9dd0067899c0bae0095032578dfc4a13",
+      "publishedAt": "2021-07-10T16:00:21Z",
+      "content": "Long before Wayne McGregor became a star choreographer famed for cerebral experimentation and edgy imagination, he was a disco fiend. His earliest inspiration was John Travolta. Not cool, Pulp Fictio… [+14340 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "NPR"
+      },
+      "author": "Elena Saavedra Buckley",
+      "title": "Caroline Shaw Is Not Here To Save Classical Music",
+      "description": "The Pulitzer-winning, Kanye-collaborating composer began her career with a creative blank check, but she's spent much of the past decade moving sideways. Her latest trick: reinventing as a songwriter.",
+      "url": "https://www.npr.org/2021/07/06/1011735623/caroline-shaw-classical-profile-let-the-soil-play-its-simple-part",
+      "urlToImage": "https://media.npr.org/assets/img/2021/07/05/draft_caroline_shaw_v1_wide-3c09f6a23455488a7fdf2c1691916e70c7c0d43a.jpg?s=1400",
+      "publishedAt": "2021-07-06T14:00:38Z",
+      "content": "On Let The Soil Play Its Simple Part, Caroline Shaw's new album with S Percussion, the Pulitzer-winning composer reinvents herself as a singer-songwriter.\r\nIllustration by Renee Klahr/NPR/Photo by Da… [+26329 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": null,
+      "title": "5 Minutes That Will Make You Love Stravinsky - The New York Times",
+      "description": "Dive into the composer who changed music history and gave Mikhail Baryshnikov “my first heady sniff of the West.”",
+      "url": "https://www.nytimes.com/2021/08/04/arts/music/classical-music-stravinsky.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/08/04/arts/04fiveminutes-stravinsky-gif/04fiveminutes-stravinsky-gif-facebookJumbo.png",
+      "publishedAt": "2021-08-04T11:16:32Z",
+      "content": "In the past, weve chosen the five minutes or so we would play to make our friends fall in love with classical music, piano, opera, cello, Mozart, 21st-century composers, violin, Baroque music, sopran… [+1013 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Fiona Maddocks",
+      "title": "Classical home listening: a fab piano four hands, Louise Farrenc and the Proms",
+      "description": "Kirill Gerstein and Ferenc Rados play Mozart; the French composer’s symphonies are a revelation; and it’s back to the Royal Albert Hall…• Playing piano four hands – two people, one piano – is among the more intimate forms of music-making. Daniel Barenboim nev…",
+      "url": "https://amp.theguardian.com/music/2021/jul/24/mozart-sonatas-for-piano-four-hands-kv521-kv497-kirill-gerstein-ferenc-rados-review-louise-farrenc-symphonies-1-3-insula-orchestra-equilbey",
+      "urlToImage": "https://i.guim.co.uk/img/media/0627b4ac8055f0438eddd76e2a2e3e430a906471/0_143_7350_4410/master/7350.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdG8tZGVmYXVsdC5wbmc&enable=upscale&s=8ff22cb214f7e4ecaae955950d68edb0",
+      "publishedAt": "2021-07-24T11:00:21Z",
+      "content": "Playing piano four hands two people, one piano is among the more intimate forms of music-making. Daniel Barenboim never passes up a chance to play duets with his childhood friend Martha Argerich: you… [+2296 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Trello.com"
+      },
+      "author": "Amy Rigby",
+      "title": "Science-Backed Productivity Playlists To Help You Dive Into Deep Work",
+      "description": "Does Mozart really make you smart? Can turning up the beat turn up your productivity? The truth, as it turns out, is complicated.",
+      "url": "https://blog.trello.com/science-backed-productivity-playlists",
+      "urlToImage": "https://blog.trello.com/hubfs/download%20%2889%29.png#keepProtocol",
+      "publishedAt": "2021-08-03T14:00:00Z",
+      "content": "Does Mozart really make you smart? Can turning up the beat turn up your productivity? The truth, as it turns out, is complicated.\r\nTo get to the bottom of this deep work dilemma, I pored over the res… [+9284 chars]"
+    },
+    {
+      "source": {
+        "id": "independent",
+        "name": "Independent"
+      },
+      "author": "Tim Page",
+      "title": "Louis Andriessen: Avant-garde composer who snubbed traditional classical music",
+      "description": "Andriessen said he wanted to use ‘a lot of instruments that you don’t have in an orchestra’",
+      "url": "https://www.independent.co.uk/news/obituaries/louis-andriessen-composer-obituary-death-b1879700.html",
+      "urlToImage": "https://static.independent.co.uk/2021/07/07/17/shutterstock_editorial_3309105a.jpg?width=1200&auto=webp&quality=75",
+      "publishedAt": "2021-07-09T23:00:00Z",
+      "content": "Louis Andriessen perhaps the leading Dutch composer since the death of Jan Pieterszoon Sweelinck in the 17th century and an embodiment of the international avant-garde since the 1960s has died aged 8… [+5466 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rlsbb.ru"
+      },
+      "author": "saamaan1@yahoo.com (Master)",
+      "title": "VA – 100 Greatest Classical (2021)",
+      "description": "Tracklist: 01. Jeremiah Clarke, Royal Philharmonic Orchestra – The Prince of Denmark’s March (Trumpet Voluntary in D Major) 02. Johann Pachelbel, Mainz Chamber Orchestra – Canon in D Major 03. Württemberg Chamber Orchestra, Tommaso Albinoni – Adagio in G Mino…",
+      "url": "http://rlsbb.ru/va-100-greatest-classical-2021/",
+      "urlToImage": null,
+      "publishedAt": "2021-07-28T16:55:57Z",
+      "content": "Tracklist:01. Jeremiah Clarke, Royal Philharmonic Orchestra – The Prince of Denmark’s March (Trumpet Voluntary in D Major)02. Johann Pachelbel, Mainz Chamber Orchestra – Canon in D Major03. Württembe… [+8668 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "aBlogtoWatch"
+      },
+      "author": "Sean Lorentzen",
+      "title": "Girard-Perregaux Unveils Limited Edition Laureato Absolute Ti 230 Watch",
+      "description": "1791 was an eventful year in world history. The United States ratified the Bill of Rights, the French Revolution raged on, Haiti began its fight for independence, and famed classical composer Wolfgang Amadeus Mozart passed away of illness at his home in Vienn…",
+      "url": "https://www.ablogtowatch.com/girard-perregaux-unveils-limited-edition-laureato-absolute-ti-230-watch/",
+      "urlToImage": "https://www.ablogtowatch.com/wp-content/uploads/2021/08/Girard-Perregaux-Laureato-Absolute-Ti-230-1.jpg",
+      "publishedAt": "2021-08-04T13:00:24Z",
+      "content": "1791 was an eventful year in world history. The United States ratified the Bill of Rights, the French Revolution raged on, Haiti began its fight for independence, and famed classical composer Wolfgan… [+5621 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Classicalvoiceamerica.org"
+      },
+      "author": "ArtsJournal1",
+      "title": "“An Outsized Image Forged From Undersized Gifts” — How Did Eugene Ormandy Do It?",
+      "description": "His baton technique was, er, idiosyncratic; he couldn’t conduct complex meters; he could be cruel. And after 44 years as music director, seemingly everyone was relieved to see him retire. Yet he and the Philadelphia Orchestra became worldwide legends together…",
+      "url": "https://classicalvoiceamerica.org/2021/07/11/ormandy-in-philadelphia-outsized-image-stitched-from-undersized-gifts/",
+      "urlToImage": null,
+      "publishedAt": "2021-07-14T19:01:00Z",
+      "content": "Eugene Ormandy conducting in 1973. (Photo by Adrien Siegel for the Philadelphia Orchestra)\r\nPERSPECTIVE The Eugene Ormandy typographical error in the New York Times archive is a model of accidental p… [+14556 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rlsbb.ru"
+      },
+      "author": "saamaan1@yahoo.com (Master)",
+      "title": "VA – Mozart for the Weekend (2021)",
+      "description": "Tracklist: 01. Serenade in G, K.525 “Eine kleine Nachtmusik” : 2. Romance (Andante) 02. Piano Concerto No.21 in C, K.467 : 2. Andante 03. Ave verum corpus, K.618 04. Concerto for Flute, Harp, and Orchestra in C, K.299 : 2. Andantino 05. Mozart: Adagio in B Mi…",
+      "url": "http://rlsbb.ru/va-mozart-for-the-weekend-2021/",
+      "urlToImage": null,
+      "publishedAt": "2021-07-19T08:28:16Z",
+      "content": "Tracklist:01. Serenade in G, K.525 “Eine kleine Nachtmusik” : 2. Romance (Andante)02. Piano Concerto No.21 in C, K.467 : 2. Andante03. Ave verum corpus, K.61804. Concerto for Flute, Harp, and Orchest… [+1726 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Psychology Today"
+      },
+      "author": "Steven C. Hayes Ph.D.",
+      "title": "A Brand New Way to Boost Your Intelligence",
+      "description": "After 100 years of trying, no method could reliably improve people's intelligence. Until now.",
+      "url": "https://www.psychologytoday.com/us/blog/get-out-your-mind/202107/brand-new-way-boost-your-intelligence",
+      "urlToImage": "https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_teaser_image/2021-07/pexels-pixabay-163064.jpg?itok=Idm0P8Gf",
+      "publishedAt": "2021-07-12T14:57:18Z",
+      "content": "In the early 1900s, the French government passed a new law, which would require all children to attend school. Naturally, some children would need more specialized assistance and care than others. An… [+7833 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Boston Globe"
+      },
+      "author": "Alexa Gagosz",
+      "title": "In a festival first, Newport Music to launch a full-year schedule of concerts this September",
+      "description": "A summer staple, the Newport Music Festival will add free community concerts around Aquidneck Island and a September-through-May chamber series in Newport, Rhode Island.",
+      "url": "https://www.bostonglobe.com/2021/07/29/metro/festival-first-newport-music-launch-full-year-schedule-concerts-this-september/",
+      "urlToImage": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/DmD3P5Cfxl4sdSI39Alog-jE0bQ=/506x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/XV3NCF2YK6HSEXYIRVMC5NH4HY.JPG",
+      "publishedAt": "2021-07-29T13:01:00Z",
+      "content": "NEWPORT, R.I. After Newport Music Festival sold out tickets to their summer festival this year, the classical music organization decided that for the first time, they would be taking their shows from… [+3174 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Boston Globe"
+      },
+      "author": "Jeremy Eichler",
+      "title": "Trifonov’s Brahms highlights stormy weekend at Tanglewood",
+      "description": "The weekend’s highlight was an appearance by the Russian soloist in Brahms’s Piano Concerto No. 1.",
+      "url": "https://www.bostonglobe.com/2021/07/19/arts/trifonovs-brahms-highlights-stormy-weekend-tanglewood/",
+      "urlToImage": "https://bostonglobe-prod.cdn.arcpublishing.com/resizer/7XGUcnWL-F3r3hNWya0YP4XYPrM=/506x0/cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/EUON4TVFQ5CSXJBUSJWZDUFSBQ.jpeg",
+      "publishedAt": "2021-07-19T20:15:43Z",
+      "content": "LENOX Yes there was a soloist cancellation because of COVID-related travel complications, the Shed remains limited to half capacity, concerts still have no intermissions, and the orchestras streaming… [+4566 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Louder"
+      },
+      "author": "Catherine Yates",
+      "title": "Muse: \"To call us 'genius' is an insult to other artists\"",
+      "description": "He hates Mozart and doesn’t believe in God, but Muse frontman Matt Bellamy and his bandmates have created some of the most awe-inspiring music recent years. In an archive piece from 2009, we delve inside the musical minds of Muse",
+      "url": "https://www.loudersound.com/features/muse-to-call-us-genius-is-an-insult-to-other-artists",
+      "urlToImage": "https://cdn.mos.cms.futurecdn.net/FbcFG85TsnFnutLv7Nxr9o-1200-80.jpg",
+      "publishedAt": "2021-07-09T17:05:04Z",
+      "content": "It probably shouldnt come as too much of a surprise to learn that Muse have previously posted online footage of themselves recording part of their fifth album, The Resistance, in a toilet. Or that th… [+10453 chars]"
+    },
+    {
+      "source": {
+        "id": "the-american-conservative",
+        "name": "The American Conservative"
+      },
+      "author": "Matthew Schmitz",
+      "title": "Francis Reverses Benedict’s Legacy",
+      "description": "Where Pope Benedict saw something beautiful accessible to all, Pope Francis sees opportunity for pride.\nThe post Francis Reverses Benedict’s Legacy appeared first on The American Conservative.",
+      "url": "https://www.theamericanconservative.com/articles/franciss-narrowing-door-to-the-latin-mass/",
+      "urlToImage": "https://www.theamericanconservative.com/wp-content/uploads/2021/07/shutterstock_1610606485.jpg",
+      "publishedAt": "2021-07-19T04:01:22Z",
+      "content": "Where Pope Benedict saw something beautiful accessible to all in the Latin mass, Pope Francis sees opportunity for pride.Pope Benedict has outlived his legacy. His signature achievements were moral a… [+4843 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Dagospia.com"
+      },
+      "author": null,
+      "title": "\"LUMINESCENTE ARROGANZA\" - DOPO LA SCORTESIA NEI CONFRONTI DI CHAILLY ALLA SCALA, RICCARDO MUTI, SENTENDOSI MOZART, HA FATTO LO SGARBO DI NON SALUTARE DRAGHI AL CONCERTO DEL QUIRINALE - A PARTE IL “CORRIERE”, CHE LO CELEBRA PER INTERESSI COMUNI (LA RIPUBBLICAZIONE DELLA SUA AUTOBIOGRAFIA), SAREBBE TROPPO CHIEDERE AI GIORNALI (E GIORNALISTI) ITALIANI ANALISI SERIE? PERCHE’ SI CONCEDE A MUTI DI SCEGLIERE DA CHI FARSI INTERVISTARE? - SENTIAMO COSA PENSA DI LUI L’ATTUALE MONDO DELLA MUSICA CLASSICA...",
+      "description": "riccardo muti concerto per il g20 della cultura al quirinale THE LONG VIEW | THE CONDUCTING PROFESSION HAS CHANGED, EVEN IF RICCARDO MUTI HASN’T Dago-traduzione dell'articolo di Andrew Mellor  per \"Classical Music” - 28 Luglio 2021   L'ottantenne maestro ital…",
+      "url": "https://www.dagospia.com/rubrica-2/media_e_tv/quot-luminescente-arroganza-quot-dopo-scortesia-confronti-278195.htm",
+      "urlToImage": "https://cdn-static.dagospia.com/img/patch/07-2021/dario-franceschini-riccardo-muti-g20-concerto-quirinale-sergio-mattarella-mario--1501588.jpg",
+      "publishedAt": "2021-07-30T15:25:05Z",
+      "content": "riccardo muti concerto per il g20 della cultura al quirinale \r\nTHE LONG VIEW | THE CONDUCTING PROFESSION HAS CHANGED, EVEN IF RICCARDO MUTI HASN’T\r\nDago-traduzione dell'articolo di Andrew Mellor  per… [+5198 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Martin Kettle, Erica Jeal, Andrew Clements and Tim Ashley",
+      "title": "Play on, maestros … our pick of the BBC Proms 2021",
+      "description": "The season may be slightly shorter than usual, but this year’s Proms will still include many tantalising pairings, several premieres and a fond farewell Related: BBC Proms to open in July with no social distancing Continue reading...",
+      "url": "https://amp.theguardian.com/music/2021/jul/27/pick-of-bbc-proms-2021-royal-albert-hall",
+      "urlToImage": "https://i.guim.co.uk/img/media/93f73eb3430ea8599f85de16dfd2f6497ef43c95/0_0_3000_1800/master/3000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=3fef03052bd2f712ec75e31dea43186d",
+      "publishedAt": "2021-07-27T11:30:55Z",
+      "content": "Friday 30 JulyWith Finlands Dalia Stasevska in charge, the First Night promises a special occasion. Vaughan Williams Serenade to Music is an ideal musical benediction to the season, followed by Poule… [+4931 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Houston Chronicle"
+      },
+      "author": "ArtsJournal1",
+      "title": "Houston Symphony’s Next Music Director Will Be Juraj Valčuha",
+      "description": "The 45-year-old Slovakian maestro, currently music director of the Teatro di San Carlo in Naples and for seven years chief conductor of Italy’s national radio orchestra in Turin, will take up the post upon Andrés Orozco-Estrada departure at the end of next se…",
+      "url": "https://preview.houstonchronicle.com/classical/houston-symphony-names-juraj-val-uha-music-16313950",
+      "urlToImage": "https://s3.amazonaws.com/sfc-datebook-wordpress/wp-content/uploads/sites/8/2021/07/featured_event33398--700x500.jpg",
+      "publishedAt": "2021-07-15T13:32:00Z",
+      "content": "The Houston Symphony on Wednesday announced Juraj Valčuha as its next music director. Valčuha will be just the 16th conductor and music director, part of a line that began in 1913 with Julien Paul Bl… [+5333 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Javier C. Hernández",
+      "title": "Outspoken Music Scholar to Lead Spoleto Festival",
+      "description": "Mena Mark Hanna, who has studied colonialism in classical music, will be the first person of color to lead the renowned arts group in Charleston, S.C.",
+      "url": "https://www.nytimes.com/2021/07/13/arts/music/mena-mark-hanna-spoleto-festival.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/07/13/arts/13festival-item-1/13festival-item-1-facebookJumbo.jpg",
+      "publishedAt": "2021-07-13T14:00:07Z",
+      "content": "At Spoleto, Hanna will inherit one of the countrys most prominent music festivals, with an endowment of about $20 million and an annual budget of about $8 million. In June, the festival finished its … [+750 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "Brendan Hesse",
+      "title": "How to Play Music on Your Livestream Without Getting Banned",
+      "description": "Machine learning has helped solve many of our biggest tech-related problems, and now it can help you find and create auto-generating, royalty-free music to play on your videos and livestreams so you won’t get hit with a copyright violation. Mubert is a royalt…",
+      "url": "https://lifehacker.com/how-to-play-music-on-your-livestream-without-getting-ba-1847423642",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/96d2dde55351c041c8452dc38365a20d.jpg",
+      "publishedAt": "2021-08-04T20:00:00Z",
+      "content": "Machine learning has helped solve many of our biggest tech-related problems, and now it can help you find and create auto-generating, royalty-free music to play on your videos and livestreams so you … [+3497 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Fiona Maddocks",
+      "title": "Classical home listening: Nino Rota, Philip Glass and Stravinsky",
+      "description": "An all-star recording or Rota’s chamber music is a revelation; cellist Maya Beiser gets to the heart of Glass; and a bold take on The Rite of Spring • The composer, pianist and conductor Nino Rota (1911-79) is best remembered for countless brilliant cinema sc…",
+      "url": "https://amp.theguardian.com/music/2021/jul/17/classical-home-listening-nino-rota-chamber-music-review-maya-beiser-x-philip-glass-the-rite-of-spring-opera-north-phoenix-dance-operavision-stream",
+      "urlToImage": "https://i.guim.co.uk/img/media/c6bf90390c72b691327aaced8161a1fc5eed1349/0_300_5198_3121/master/5198.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdG8tZGVmYXVsdC5wbmc&enable=upscale&s=c21d0482b16d8c727e982cfb0b9ac70b",
+      "publishedAt": "2021-07-17T11:00:01Z",
+      "content": "The composer, pianist and conductor Nino Rota (1911-79) is best remembered for countless brilliant cinema scores, notably for The Godfather and The Godfather Part II, but also for classics by his fel… [+2325 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Fiona Maddocks",
+      "title": "Classical home listening: Isata Kanneh-Mason; Fretwork with Iestyn Davies; Mirga at the Proms",
+      "description": "Kanneh-Mason’s second album is a delight; Davies and Fretwork excel in early baroque German music; and the pick of Proms week one• With its brilliant fugue finale, Samuel Barber’s heavyweight yet economical Piano Sonata in E flat, Op 26 provides a strong back…",
+      "url": "https://amp.theguardian.com/music/2021/jul/31/isata-kanneh-mason-summertime-review-lamento-fretwork-iestyn-davies-mirga-cbso-ruth-gipps-brahms-prom",
+      "urlToImage": "https://i.guim.co.uk/img/media/6df44b5feeac796368cad58bd77026f5928ccacd/0_400_6000_3600/master/6000.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdG8tZGVmYXVsdC5wbmc&enable=upscale&s=5bd91bbb577b7f82abe08224a4af5388",
+      "publishedAt": "2021-07-31T11:00:27Z",
+      "content": "With its brilliant fugue finale, Samuel Barbers heavyweight yet economical Piano Sonata in E flat, Op 26 provides a strong backbone to Summertime (Decca), Isata Kanneh-Masons second solo album. This … [+2441 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Tim Ashley",
+      "title": "Spitalfields festival Dancing With Apollo review – beauty and insights as festival turns to classical mythology",
+      "description": "Kings Place, London Spitalfields Music festival’s combination of chamber music, dance and lecture showcased the lyricism of violinist Sara Trickey’s playing and made for a thought-provoking concertPart of Spitalfields Music festival, Dancing With Apollo was e…",
+      "url": "https://amp.theguardian.com/music/2021/jul/12/dancing-with-apollo-review-kings-place-london-spitalfields-music-festival",
+      "urlToImage": "https://i.guim.co.uk/img/media/f8f247b73428fd48a01ca2dd4e702f76401c9891/590_912_6018_3610/master/6018.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTQucG5n&enable=upscale&s=da746b1f4501bb5e6ac30726fec9ccda",
+      "publishedAt": "2021-07-12T10:08:18Z",
+      "content": "Part of Spitalfields Music festival, Dancing With Apollo was effectively a lecture concert about classical mythology and its reinterpretation over time, a vast subject that dominates western culture,… [+1819 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The New Yorker"
+      },
+      "author": "Oussama Zahr",
+      "title": "Fall Classical-Music Preview",
+      "description": "Oussama Zahr writes about the Metropolitan Opera making history, BAM’s beachside “Sun & Sea,” and Carnegie Hall’s re-start.",
+      "url": "https://www.newyorker.com/magazine/2021/08/16/fall-2021-classical-music-preview",
+      "urlToImage": "https://media.newyorker.com/photos/610c426f2eab8cc9ca3857a5/16:9/w_1280,c_limit/210816_r38810.jpg",
+      "publishedAt": "2021-08-06T10:00:00Z",
+      "content": "Fall schedules may be thinner than usual, but the fact that they contain live, indoor, and in-person events engenders a hopefulness that was missing just a few months ago.\r\nThe New York Philharmonic … [+2160 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Fiona Maddocks",
+      "title": "The week in classical: Houses Slide; Manchester Collective x Edmund Finnis; Elias String Quartet",
+      "description": "Royal Festival Hall; Christ Church Spitalfields; Wigmore Hall, LondonOne woman takes on the climate crisis in a premiere powered by bikes. And the many guises of strings in quartet riches from Haydn to Mica LeviIn a week of flash floods, the world premiere of…",
+      "url": "https://amp.theguardian.com/music/2021/jul/17/houses-slide-london-sinfonietta-laura-bowler-premiere-bike-powered-bicycles-manchester-collective-edmund-finnis-spitalfields-festival-elias-string-quartet-wigmore-hall-donald-grant-haydn-mendelssohn",
+      "urlToImage": "https://i.guim.co.uk/img/media/7b32724631d7265baad162b76545e1b1db653d20/0_0_3500_2101/master/3500.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTQucG5n&enable=upscale&s=90a726f56c829efb4ac7e31ac81abc1e",
+      "publishedAt": "2021-07-17T11:30:01Z",
+      "content": "In a week of flash floods, the world premiere of Houses Slide was all too timely. Who doesnt currently feel they might be atop a crumbling cliff, metaphorical or otherwise. The composer Laura Bowler … [+4196 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Lanre Bakare",
+      "title": "Simon Rattle: I always avoided ‘jingoistic’ Last Night of the Proms",
+      "description": "Conductor admits elements of event known for its flag-waving and patriotic anthems made him uneasySimon Rattle has said he avoided conducting at the Last Night of the Proms throughout his career because of his discomfort at its “jingoistic elements”.In an int…",
+      "url": "https://amp.theguardian.com/music/2021/jul/27/simon-rattle-i-always-avoided-jingoistic-last-night-of-the-proms",
+      "urlToImage": "https://i.guim.co.uk/img/media/e933f9871cf99ae32ff3668c8c041be77aec51ea/0_252_7571_4545/master/7571.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=881b68c0970ac8fb2b2ed9fdb2e62855",
+      "publishedAt": "2021-07-26T23:01:17Z",
+      "content": "Simon Rattle has said he avoided conducting at the Last Night of the Proms throughout his career because of his discomfort at its jingoistic elements.\r\nIn an interview with Radio Times, the conductor… [+2363 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Ben Beaumont-Thomas",
+      "title": "Mercury prize 2021: first-time nominees dominate shortlist",
+      "description": "No 1 albums by Wolf Alice, Mogwai and Celeste are joined by leftfield artists such as Hannah Peel and Nubya Garcia in race for prestigious music awardChart-topping albums by Wolf Alice, Celeste and Mogwai feature in nominations for the 2021 Mercury prize, one…",
+      "url": "https://amp.theguardian.com/music/2021/jul/22/mercury-prize-2021-first-time-nominees-dominate-shortlist",
+      "urlToImage": "https://i.guim.co.uk/img/media/02bf2048989fd21c2c0f02fa0d4404487b8fda63/0_0_2560_1536/master/2560.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=f308fa47441c0c9784cc6ca21890d032",
+      "publishedAt": "2021-07-22T10:16:28Z",
+      "content": "Chart-topping albums by Wolf Alice, Celeste and Mogwai feature in nominations for the 2021 Mercury prize, one of the most prestigious music awards in the UK.\r\nIn a diverse list that ranges across jaz… [+6168 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Gemma Samways",
+      "title": "R&B star Hawa: ‘I couldn’t make gay music in the Philharmonic’",
+      "description": "The Guinea-born, New York-based singer and rapper quit her classical background to make explicit pop that focuses on unabashed sexualityConsidering she’s today sporting a baseball cap emblazoned with the slogan “Have u cum yet today?” it’s not a huge shock to…",
+      "url": "https://amp.theguardian.com/music/2021/aug/06/rb-star-hawa-i-couldnt-make-gay-music-in-the-philharmonic",
+      "urlToImage": "https://i.guim.co.uk/img/media/7173e57555aba011a4d3537c2d830ffd051621e6/0_1161_3024_1814/master/3024.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=6b5963048f5371d17e9aa57c01773ef3",
+      "publishedAt": "2021-08-06T12:14:33Z",
+      "content": "Considering shes today sporting a baseball cap emblazoned with the slogan Have u cum yet today? its not a huge shock to hear that Hawa has never held back discussing her sex life. Coming out to her d… [+2399 chars]"
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Daewoung Kim, Dogyun Kim",
+      "title": "No more 'Gangnam Style': South Korea's COVID rules demand slower workout music in gyms - Reuters",
+      "description": "Plenty of gym-goers rely on a good tune to get themselves through that workout, but in South Korea their musical options have just reduced significantly under new COVID-19 rules.",
+      "url": "https://www.reuters.com/article/us-health-coronavirus-southkorea-gym-idUSKBN2EI0X6",
+      "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210712&t=2&i=1568606103&r=LYNXMPEH6B0EZ&w=800",
+      "publishedAt": "2021-07-12T10:25:00Z",
+      "content": "SEOUL (Reuters) - Plenty of gym-goers rely on a good tune to get themselves through that workout, but in South Korea their musical options have just reduced significantly under new COVID-19 rules.\r\nT… [+2922 chars]"
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Daewoung Kim,Dogyun Kim",
+      "title": "No more 'Gangnam Style': S.Korea's COVID rules demand slower workout music in gyms - Reuters",
+      "description": "Plenty of gym-goers rely on a good tune to get themselves through that workout, but in South Korea their musical options have just reduced significantly under new COVID-19 rules.",
+      "url": "https://www.reuters.com/world/asia-pacific/no-more-gangnam-style-skoreas-covid-rules-demand-slower-workout-music-gyms-2021-07-12/",
+      "urlToImage": "https://www.reuters.com/resizer/kZYBoY9bNTPf4EE0tzHvvjx3oQI=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/EUQBXNK22BLLNOWM37EOFXGCIQ.jpg",
+      "publishedAt": "2021-07-12T10:24:00Z",
+      "content": "SEOUL, July 12 (Reuters) - Plenty of gym-goers rely on a good tune to get themselves through that workout, but in South Korea their musical options have just reduced significantly under new COVID-19 … [+2972 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The London Free Press"
+      },
+      "author": "Chris Montanini, Stratford Beacon Herald",
+      "title": "'We can't wait to get started': Stratford Summer Music unveils 2021 lineup - London Free Press (Blogs)",
+      "description": "After having to cancel most of its concerts last year, Stratford Summer Music unveiled its 2021 season Monday, a mix of live and online events organizers say…",
+      "url": "https://lfpress.com/entertainment/local-arts/we-cant-wait-to-get-started-stratford-summer-music-unveils-2021-lineup",
+      "urlToImage": "https://smartcdn.prod.postmedia.digital/lfpress/wp-content/uploads/2021/07/0713-sf-summer-music1-e1626112514111.jpg",
+      "publishedAt": "2021-07-13T21:02:30Z",
+      "content": "After having to cancel most of its concerts last year, Stratford Summer Music unveiled its 2021 season Monday, a mix of live and online events organizers say will offer celebration and renewal when t… [+5900 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Tayyab Amin",
+      "title": "Lingua Ignota: Sinner Get Ready review – a devastating voice",
+      "description": "(Sargent House) Kristin Hayter weaves layered harmonies and folk instruments into a formidable platform from which to express her tangled relationship with Christianity‘Glorious Father, intercede for me. / If I cannot hide from you, neither can he,” Lingua Ig…",
+      "url": "https://amp.theguardian.com/music/2021/aug/06/lingua-ignota-sinner-get-ready-review-kristin-hayter-potent-reckoning-with-religion",
+      "urlToImage": "https://i.guim.co.uk/img/media/c4badf16a273a9c8ba1e3ef3a4c63259f4c91f78/2243_461_3061_1837/master/3061.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTQucG5n&enable=upscale&s=8eb13d64504c1e30a5b4e1e31a991acb",
+      "publishedAt": "2021-08-06T07:30:17Z",
+      "content": "Glorious Father, intercede for me. / If I cannot hide from you, neither can he, Lingua Ignotas Kristin Hayter sings, with a voice she once used as a church cantor; she has since rebuked her Catholic … [+1602 chars]"
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Mayu Sakoda, Elaine Lies",
+      "title": "Olympics-Synchronised swimming-Russian team tops technicals, China close behind - Reuters",
+      "description": "The folksong-themed routine and clean moves of the Russian team put them top of the scoreboard for the technical routine in synchronised swimming on Friday, with China hot on their heels just over a point behind.",
+      "url": "https://www.reuters.com/article/olympic-2020-swa-idUSL8N2PD4NK",
+      "urlToImage": "https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800",
+      "publishedAt": "2021-08-06T12:50:00Z",
+      "content": "TOKYO, Aug 6 (Reuters) - The folksong-themed routine and clean moves of the Russian team put them top of the scoreboard for the technical routine in synchronised swimming on Friday, with China hot on… [+2599 chars]"
+    },
+    {
+      "source": {
+        "id": "reuters",
+        "name": "Reuters"
+      },
+      "author": "Reuters Fact Check",
+      "title": "Fact Check-Debunking social media claims about A=432Hz and A=440Hz musical pitches - Reuters",
+      "description": "A popular meme on social media makes a series of allegations about the musical tune pitch A=432Hz and A=440Hz, including that the latter was a standard imposed by the Nazis to manipulate their enemies. Multiple experts told Reuters these allegations are unfou…",
+      "url": "https://www.reuters.com/article/factcheck-musical-pitches-idUSL1N2P915O",
+      "urlToImage": "https://s1.reutersmedia.net/resources_v2/images/rcom-default.png?w=800",
+      "publishedAt": "2021-08-02T14:32:00Z",
+      "content": "A popular meme on social media makes a series of allegations about the musical tune pitch A=432Hz and A=440Hz, including that the latter was a standard imposed by the Nazis to manipulate their enemie… [+6982 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Haseeb Iqbal",
+      "title": "‘There is no fear’: how a cold-war tour inspired Pakistan’s progressive jazz scene",
+      "description": "A US state department initiative was the unlikely catalyst for a creative explosion of Pakistani rhythm and western improvIn 1956, a new weapon was unveiled in the cold war: jazz. That year, the US introduced the Jazz Ambassadors Tour, a showcase that sent Am…",
+      "url": "https://amp.theguardian.com/music/2021/jul/12/there-is-no-fear-how-a-cold-war-tour-inspired-pakistans-progressive-jazz-scene",
+      "urlToImage": "https://i.guim.co.uk/img/media/24a370c31a08063196c09806f04995ee9ce15854/273_0_2184_1310/master/2184.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=a13fb681590665a1733b6229281f21d7",
+      "publishedAt": "2021-07-12T08:49:14Z",
+      "content": "In 1956, a new weapon was unveiled in the cold war: jazz. That year, the US introduced the Jazz Ambassadors Tour, a showcase that sent American musicians overseas to parts of the world that were perc… [+15716 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Design-milk.com"
+      },
+      "author": "Kelly Beall",
+      "title": "F5: Lighting Designer Hervé Descottes Shares His Lockdown Cocktail of Choice",
+      "description": "Lighting designer Hervé Descottes shares the best place he rides his motorbike and his lockdown cocktail of choice.",
+      "url": "https://design-milk.com/f5-lighting-designer-herve-descottes-shares-his-lockdown-cocktail-of-choice/",
+      "urlToImage": "https://design-milk.com/images/2021/07/F5-Herve-Descotte-Museum-of-Fine-Arts-Houston-Kinder-Building-Photo-Richard-Barnes-Courtesy-of-Museum-of-Fine-Arts-Houston.jpg",
+      "publishedAt": "2021-07-16T13:00:37Z",
+      "content": "Photo courtesy LObservatoire International\r\nIn 1993, Hervé Descottes co-founded the lighting design firm LObservatoire Internationalin New York City after eight years of design practice in Paris. As … [+3461 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Guardian staff reporter",
+      "title": "This week’s home entertainment: from King Gary to Sparkling",
+      "description": "Tom Davis is back for a second series of his competitive family guy, while the story of Champagne is explored on BritboxTom Davis reprises his role of Gary King, a family man trying to stand out from his neighbours in the surprisingly competitive suburban enc…",
+      "url": "https://amp.theguardian.com/tv-and-radio/2021/jul/23/bbc-one-king-gary-best-tv-of-week",
+      "urlToImage": "https://i.guim.co.uk/img/media/2ea16c1e102c0fe1412fc66095cf664cbe39746f/0_0_1654_992/master/1654.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=94d2d72509f32c54a9e580f0448a11da",
+      "publishedAt": "2021-07-23T11:00:52Z",
+      "content": "Tom Davis reprises his role of Gary King, a family man trying to stand out from his neighbours in the surprisingly competitive suburban enclave of Butterchurn Crescent, in this gentle comedy. Returni… [+5265 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Andrew Clements",
+      "title": "Chopin: Complete Nocturnes review | Andrew Clements's classical album of the week",
+      "description": "Alain Planès(Harmonia Mundi, two CDs)Though not the most imaginative take on the 21 nocturnes, the French pianist captures Chopin’s music as it was conceived on a superb-sounding 1836 PleyelChopin composed 21 nocturnes, 18 of which were published during his l…",
+      "url": "https://amp.theguardian.com/music/2021/jul/08/chopin-complete-nocturnes-review-alain-planes",
+      "urlToImage": "https://i.guim.co.uk/img/media/001f2a6545ee3002b484dbd30dcc1bb23301536d/0_394_6144_3687/master/6144.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTMucG5n&enable=upscale&s=d60d11df395d3c44776aacaff0d893c7",
+      "publishedAt": "2021-07-08T14:00:03Z",
+      "content": "Chopin composed 21 nocturnes, 18 of which were published during his lifetime. They span almost his entire creative career the earliest were written in the late 1820s, when the composer was still in h… [+2665 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Stereogum"
+      },
+      "author": "James Rettig",
+      "title": "11:11 Turns 20",
+      "description": "Regina Spektor wanted to do it all. “The people I look up to are unattainable,” she admitted in an early New York Times interview, proceeding to list the artists she aspired to be like: the Beatles, Bob Dylan, Mozart, Chopin, Bach, Tennessee Williams, Tchaiko…",
+      "url": "https://www.stereogum.com/2153169/regina-spektor-debut-album-1111/reviews/the-anniversary/",
+      "urlToImage": "https://www.stereogum.com/wp-content/themes/stereogum-ws/img/opengraph_image.jpg",
+      "publishedAt": "2021-07-08T15:11:58Z",
+      "content": "Regina Spektor wanted to do it all. “The people I look up to are unattainable,” she admitted in an early New York Times interview, proceeding to list the artists she aspired to be like: the Beatles, … [+8072 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Guardian"
+      },
+      "author": "Andrew Clements",
+      "title": "Busoni: Elegies, Toccata, etc review | Andrew Clements's classical album of the week",
+      "description": "Peter Donohoe(Chandos)With music that demands immense virtuosity, Peter Donohoe meets each challenge fearlesslyIt’s now almost a century since Ferruccio Busoni died, yet fixing him into the history of early 20th-century music gets no easier. Fifty years ago B…",
+      "url": "https://amp.theguardian.com/music/2021/aug/05/busoni-elegies-toccata-etc-review-infectious-exuberance-and-crusading-zeal",
+      "urlToImage": "https://i.guim.co.uk/img/media/bf49bfd1edc9ec2e5fd5514c457449637abbb201/0_1167_3675_2205/master/3675.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctcmV2aWV3LTQucG5n&enable=upscale&s=887587cddd54f52820068c1d9ddd5eb0",
+      "publishedAt": "2021-08-05T14:00:04Z",
+      "content": "Its now almost a century since FerruccioBusoni died, yet fixing him into the history of early 20th-century music gets no easier. Fifty years ago Busoni was regularly included in surveys of musical mo… [+2245 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rlsbb.ru"
+      },
+      "author": "saamaan1@yahoo.com (Master)",
+      "title": "VA – Classical Hits: Famous Works (2021)",
+      "description": "Tracklist: 01. I Musici, Tomaso Albinoni – Adagio for Strings 02. Voces8, Gregorio Allegri – Miserere 03. Academy of St. Martin in the Fields, Sir Neville Marriner, Samuel Barber – Adagio for Strings 04. Anatol Ugorski, Ludwig van Beethoven – Fur Elise 05. Em…",
+      "url": "http://rlsbb.ru/va-classical-hits-famous-works-2021/",
+      "urlToImage": null,
+      "publishedAt": "2021-07-24T06:16:57Z",
+      "content": "Tracklist:01. I Musici, Tomaso Albinoni – Adagio for Strings02. Voces8, Gregorio Allegri – Miserere03. Academy of St. Martin in the Fields, Sir Neville Marriner, Samuel Barber – Adagio for Strings04.… [+3792 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Van-magazine.com"
+      },
+      "author": "Van",
+      "title": "Asian Musicians On What They Really Face In The Classical Industry",
+      "description": "In classical music, racism toward musicians of Asian heritage is as casual as it is pervasive. When I was in my first year of conservatory, at the Royal Academy of Music in London, a Korean composition student was late to a single lesson; the professor procee…",
+      "url": "https://van-magazine.com/mag/anti-asian-racism/",
+      "urlToImage": "https://van-magazine.com/wp-content/uploads/2021/07/anti-asian-racism-in-classical-music.jpg",
+      "publishedAt": "2021-07-29T19:03:00Z",
+      "content": "In classical music, racism toward musicians of Asian heritage is as casual as it is pervasive. When I was in my first year of conservatory, at the Royal Academy of Music in London, a Korean compositi… [+13733 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rlsbb.ru"
+      },
+      "author": "saamaan1@yahoo.com (Master)",
+      "title": "VA – 100 Greatest Classical (2021)",
+      "description": "Tracklist: 01. Jeremiah Clarke, Royal Philharmonic Orchestra – The Prince of Denmark’s March (Trumpet Voluntary in D Major) 02. Johann Pachelbel, Mainz Chamber Orchestra – Canon in D Major 03. Württemberg Chamber Orchestra, Tommaso Albinoni – Adagio in G Mino…",
+      "url": "http://rlsbb.ru/va-100-greatest-classical-2021/",
+      "urlToImage": null,
+      "publishedAt": "2021-07-28T16:55:57Z",
+      "content": "Tracklist:01. Jeremiah Clarke, Royal Philharmonic Orchestra – The Prince of Denmark’s March (Trumpet Voluntary in D Major)02. Johann Pachelbel, Mainz Chamber Orchestra – Canon in D Major03. Württembe… [+8668 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Boston Herald"
+      },
+      "author": "Jed Gottlieb",
+      "title": "Tanglewood weekend highlights eclectic wizardry of John Williams",
+      "description": "On Friday, at Tanglewood, conductor Keith Lockhart will lead the Boston Pops through modern orchestral favorites such as John Williams’ “The Imperial March” from “Star Wars.” The next night, maestros Williams and Andris Nelsons will share the Tanglewood podiu…",
+      "url": "https://www.bostonherald.com/2021/07/18/tanglewood-weekend-highlights-eclectic-wizardry-of-john-williams/",
+      "urlToImage": "https://www.bostonherald.com/wp-content/uploads/2021/07/suncov2-01.jpg?w=1024&h=683",
+      "publishedAt": "2021-07-18T09:36:43Z",
+      "content": "On Friday, at Tanglewood, conductor Keith Lockhart will lead the Boston Pops through modern orchestral favorites such as John Williams The Imperial March from Star Wars. The next night, maestros Will… [+3440 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Funcheap.com"
+      },
+      "author": "Website Contributor",
+      "title": "7/23/21: Shenson Faculty Concert Series: Diane Grubbe, Flute (Virtual) - FREE",
+      "description": "Recent Music for the Flutes with Diane Grubbe\nFriday July 23, 2021 at 5:30pm (PDT)\nFREE\nDiane Grubbe performs 20th and 21st Century works for flutes large and small by Mario Lavista, Andrew M. Rodriguez, Orlando Jacinto Garciá and Miguel del Aguila. The conce…",
+      "url": "https://sf.funcheap.com/shenson-faculty-concert-series-diane-grubbe-flute-virtual/",
+      "urlToImage": "https://cdn.funcheap.com/wp-content/uploads/2021/07/Diane-Grubbe-flute-scaled.jpeg",
+      "publishedAt": "2021-07-20T17:16:20Z",
+      "content": "Submitted by the Event Organizer\r\nRecent Music for the Flutes with Diane GrubbeFriday July 23, 2021 at 5:30pm (PDT)FREE\r\nDiane Grubbe performs 20th and 21st Century works for flutes large and small b… [+1585 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Mixmag.net"
+      },
+      "author": null,
+      "title": "How a period of reflection led DJ Seinfeld to discover his true artistic self",
+      "description": "Tracy Kawalik speaks to DJ Seinfeld about difficult life experiences fuelling self-discovery, UFO hunting, lo-fi house and the next stage of his musical evolutionContinue reading...",
+      "url": "https://mixmag.net/feature/dj-seinfeld-interview-cover-lo-fi-mirrors-ninja-tune",
+      "urlToImage": "https://mixmag.net/assets/uploads/images/_facebook/DJ-Seinfeld-Mixmag-Web2.jpg",
+      "publishedAt": "2021-07-14T11:06:36Z",
+      "content": "From the outset, DJ Seinfeld's beats were ultimately guided by an idea of authenticity, true to the spirit of the early house pioneers and the unabashed rawness of the confines that their equipment d… [+2960 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Largeheartedboy.com"
+      },
+      "author": "david",
+      "title": "Gabriel Krauze's Playlist for His Novel \"Who They Was\"",
+      "description": "In the Book Notes series, authors create and discuss a music playlist that relates in some way to their recently published book. Previous contributors include Jesmyn Ward, Lauren Groff, Bret Easton Ellis, Celeste Ng, T.C. Boyle, Dana Spiotta, Amy...",
+      "url": "http://www.largeheartedboy.com/blog/archive/2021/07/gabriel_krauzes.html",
+      "urlToImage": null,
+      "publishedAt": "2021-07-19T15:05:04Z",
+      "content": "In the Book Notes series, authors create and discuss a music playlist that relates in some way to their recently published book.\r\n\n\nPrevious contributors include Jesmyn Ward, Lauren Groff, Bret Easto… [+11855 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Visual.ly"
+      },
+      "author": "xokido6962",
+      "title": "How to Burn Songs from iTunes to CD on PC",
+      "description": "If you haven't figured out how to burn CD from iTunes yet or run into a failure in the process, the following guide will help you work it out.",
+      "url": "https://visual.ly/community/Infographics/computers/how-burn-songs-itunes-cd-pc",
+      "urlToImage": "https://thumbnails-visually.netdna-ssl.com/how-to-burn-songs-from-itunes-to-cd-on-pc_60fe1d29e6cee_w250_h250.jpg",
+      "publishedAt": "2021-07-26T02:25:45Z",
+      "content": "Qv Search File Edit Song View Controls Account Help A Music Library For You Browse Radio Store Library Name Time Artist A Album Genre O Recently Added Chopin: Nocturne #2 In E Flat, Op. 9/2, CT 109 C… [+1127 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Rlsbb.ru"
+      },
+      "author": "Kingman",
+      "title": "VA – Chopin for the Weekend (2021)",
+      "description": "Tracklist: 01. Chopin : Mazurka No.11 In E Minor Op.17 No.2 02. Nocturne No. 2 in E-Flat Major, Op. 9 No. 2 03. Chopin : Nocturne No.8 In D Flat, Op.27 No.2 (2005 Recording) 04. 3 Nocturnes, Op. 9 : Nocturne No. 2 in E-Flat Major, Op. 9 No. 2 05. Piano Concer…",
+      "url": "http://rlsbb.ru/va-chopin-for-the-weekend-2021/",
+      "urlToImage": null,
+      "publishedAt": "2021-07-19T08:25:32Z",
+      "content": "Tracklist:01. Chopin : Mazurka No.11 In E Minor Op.17 No.202. Nocturne No. 2 in E-Flat Major, Op. 9 No. 203. Chopin : Nocturne No.8 In D Flat, Op.27 No.2 (2005 Recording)04. 3 Nocturnes, Op. 9 : Noct… [+2225 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "The Quietus"
+      },
+      "author": "Jennifer Lucy Allan",
+      "title": "Ear-Walking Woman: Natalia Beylis Interviewed",
+      "description": "The Ireland-based experimental musician talks to Jennifer Lucy Allan about trees, pianos, Edward Gorey's alphabet and the difficulty in pressing the sound of crisp packets to vinyl",
+      "url": "https://thequietus.com/articles/30230-natalia-beylis-interview",
+      "urlToImage": "http://s3.amazonaws.com/quietus_production/images/articles/30230/Natalia_Beylis_Photo_1626762498.jpg",
+      "publishedAt": "2021-07-20T06:24:23Z",
+      "content": "The Ireland-based experimental musician talks to Jennifer Lucy Allan about trees, pianos, Edward Gorey's alphabet and the difficulty in pressing the sound of crisp packets to vinyl\r\nNatalia Beylis, p… [+8618 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Stuff.co.nz"
+      },
+      "author": "Stuff",
+      "title": "Arts events in the Wellington region - July 30-Aug 1",
+      "description": "Benee headlines this weekend's events with two shows at the MIchael Fowler Centre, backed by the New Zealand Symphony Orchestra.",
+      "url": "https://www.stuff.co.nz/entertainment/arts/300367012/arts-events-in-the-wellington-region--july-30aug-1",
+      "urlToImage": "https://resources.stuff.co.nz/content/dam/images/4/y/q/f/9/r/image.related.StuffLandscapeSixteenByNine.1420x800.4ytwo4.png/1627528992412.jpg",
+      "publishedAt": "2021-07-29T17:00:00Z",
+      "content": "FRIDAY\r\nBenee &amp; the NZSO\r\nMichael Fowler Centre, today and tomorrow, 8pm, tickets from $99 \r\n Kiwi pop superstar Benees orchestral debut, performing her songs with her band and the mighty sound o… [+5371 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Evening Standard"
+      },
+      "author": "Nancy Durrant",
+      "title": "Proms 2021: want to get into classical? The festival’s stars on the best piece of music to start you off - Evening Standard",
+      "description": "Proms 2021: want to get into classical? The festival’s stars on the best piece of music to start you off  Evening Standard",
+      "url": "https://www.standard.co.uk/culture/music/proms-2021-classical-music-best-piece-sheku-kanneh-mason-jess-gillam-steven-isserlis-max-richter-b947675.html",
+      "urlToImage": "https://static.standard.co.uk/2021/07/29/12/classical%20comp2.jpg?width=1200&width=1200&auto=webp&quality=75",
+      "publishedAt": "2021-07-30T06:00:00Z",
+      "content": "After the inevitable years hiatus, the BBC Proms are back in person at the Royal Albert Hall starting today. With the much-celebrated Prommers tickets (usually standing, a bit like the groundlings at… [+9194 chars]"
+    }
+  ],
   "articlecomments": [
     {
       "id": 1,
@@ -359,6 +1037,20 @@
       "likedUsers": [],
       "dislikedUsers": [],
       "id": 10
+    },
+    {
+      "postId": "https://www.npr.org/sections/deceptivecadence/2021/07/06/1011735623/caroline-shaw-classical-profile-let-the-soil-play-its-simple-part",
+      "author": "testUser",
+      "profileImage": "https://widgetwhats.com/app/uploads/2019/11/free-profile-photo-whatsapp-4.png",
+      "content": "This is a test comment\n",
+      "likes": 1,
+      "dislikes": 0,
+      "likedUsers": [
+        "testUser"
+      ],
+      "dislikedUsers": [],
+      "id": 11,
+      "disliked": 0
     }
   ],
   "postcomments": [
