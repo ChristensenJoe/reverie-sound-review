@@ -3,7 +3,7 @@ import { Button, ButtonGroup } from '@material-ui/core'
 import LoginForm from "./LoginForm"
 import { useState, useEffect } from "react"
 import SignUpForm from "./SignUpForm"
-import rev from "../images/rev.png"
+import revlogo from "../images/revlogo.png"
 import '../styles/w3.css'
 
 
@@ -57,9 +57,9 @@ function Login({ updateUser }) {
 
                                 <img
                                     className="w3-animate-top"
-                                    height="400px"
+                                    height="350px"
                                     alt="logo"
-                                    src={rev}
+                                    src={revlogo}
                                 />
                                 <div
                                     style={{ border: "solid 2px" }}
