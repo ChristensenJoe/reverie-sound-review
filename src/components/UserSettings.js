@@ -21,7 +21,7 @@ function UserSettings({ user, setUser }) {
 
     useEffect(() => {
         let isMounted = true
-        fetch(`${process.env.REACT_APP_API_URL}/users/`)
+        fetch(`${process.env.REACT_APP_API_URL}/users`)
         .then(res => res.json())
         .then(data => {
             if (isMounted) {
@@ -79,10 +79,12 @@ function UserSettings({ user, setUser }) {
         let isUsername = true
 
         usersAll.forEach(data => {
-            if (!(data.username === usernameForm)) {
+            if ((data.username === usernameForm)) {
                 isUsername = false;
             }
         })
+
+        console.log(isUsername);
 
         if (isUsername) {
         fetch(`${process.env.REACT_APP_API_URL}/users/${userId}`, {
