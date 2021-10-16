@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Reverie Sound Review
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="./src/images/Reverie_Sound_Review_Logo-removebg-preview.png">  
+</p>
 
-## Available Scripts
+News forum for classical music that allows for searching, posting, liking, and commenting.
 
-In the project directory, you can run:
+### A live version of Reverie Sound Review is deployed with netlify and running here:
 
-### `npm start`
+[Live Version](https://reverie-sound-review.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*Note: Any features that use the NewsAPI are not available on the hosted version*
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Searching
 
-### `npm run build`
+Reverie Sound Review has two different searching features. Firstly, you can search for classical music articles and news. We use the NewsAPI to make this happen. It suppors full pagination and allows easy navigation. Secondly, you can search for user posts that are stored in our JSON-Server mock database. Again, this search supports full pagination and allows easy navigation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Posting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Reverie Sound Review allows users to post their own articles with a handy form. Once posted, the article can be searched and accessed by other users. This feature is fully persisting using JSON-Server.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Commenting
 
-### `npm run eject`
+Reverie Sound Review supports full commenting functionality. Users can comment on both news articles and user posts by using an easily accessible form at the bottom of each article/post. This feature is also fully persisted using JSON-Server.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Liking
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Reverie Sound Review also allows users to like other comments. Full liking logic is used so there wont be any mishaps (ie. liking & disliking simultaneously, messing up like/dislike amount, etc.). Liking/Disliking is also user-specific, meaning that each user has their own persisting like data. So users wont have to worry about their like disappearing upon refresh.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Updating User Settings
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Reverie Sound Review supports full user account cusomization. Once logged in, a user can navigate to their setting and update their profile image, username, or password. These updates take effect immediately and also persist using JSON-Server.
 
-## Learn More
+## Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**1. Clone the repository to your local maching**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**2. Navigate into the root folder and run the build command**
+  
+  To install all node packages:
+  ```
+  $ npm install
+  ```
 
-### Code Splitting
+**3. Add the necessary environment variables**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  Reverie Sound Review makes use of development and production variables for fetching.
+  
+  First navigate to the root directory and create `env.development`
+  
+  Navigate to this file and add the following:
+  
+  ```javascript
+      REACT_APP_API_URL=http://localhost:8000
+  ```
+  
+  This setup will only work if you run JSON-Server on port 8000. If you're running it on a different port, then update the `REACT_APP_API_URL` variable to match.
 
-### Analyzing the Bundle Size
+  **5. Start up the servers**
+  
+  Run this to start up the JSON-Server backend:
+  ```
+  $ json-server --watch src/data/db.json --port 8000
+  ```
+  
+  Then, in another terminal, run this to start up the React frontend:
+  ```
+  $ npm start
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Forking and cloning is welcome, but please provide attribution to the authors.
